@@ -1,0 +1,29 @@
+Selectors and Declaration Blocks
+
+HTML Element Selector Examples
+p{}
+h1{}
+ul{}
+
+Class Selector Examples
+.myClass {}
+.boldHeading {}
+
+ID Selector Examples
+#myId {}
+
+Declaration Blocks (of CSS Properties)
+
+p {
+    color: green;
+    color: #FF0000;
+    padding: 36px;
+}
+
+How to Include CSS in html
+
+Inline CSS
+
+Internal CSS
+
+External CSS 
