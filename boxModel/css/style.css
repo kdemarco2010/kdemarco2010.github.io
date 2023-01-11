@@ -1,0 +1,20 @@
+#main {
+    background-color: rgb(229, 229, 249);
+    padding: 30px;  
+}
+
+#content {
+    background-color: rgb(106, 90, 205);
+    padding: 24px 20px;
+    border: 5px solid rgb(27, 0, 138);
+    margin: 30px 0px;
+    color: white;
+}
+
+.quote {
+    padding: 40px;
+}
+
+.quoteCitation {
+    margin: 0px 25px
+}
