@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&family=Rowdies&display=swap');
+
+/*
+    The five basic fallback font-families are:
+    serif, sans-serif, monospace, cursive, fantasy
+*/
+#p1 {
+    color:brown;
+    font-family: 'Rowdies', cursive;
+    font-size: 24px;
+}
+
+#p2 {
+    color: #BB8090;
+    font-family: 'Moon Dance', cursive;
+    font-size: 10vw;
+}
+
+#p3 {
+    color: rgb(73, 0, 142);
+}
+
+#p4 {
+    color: rgba(73, 0, 142, 0.3);
+}
+
+#p5 {
+    font-family: 'Moon Dance', cursive;
+    font-weight: 900; 
+}
+
+#p6 {
+    font-style:oblique;
+}
+
+#p7 {
+    text-decoration:#65d007 underline;
+}
