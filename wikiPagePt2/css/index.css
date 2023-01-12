@@ -1,0 +1,71 @@
+h1  {
+    border-bottom: 1px solid black;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 10px;
+    padding-bottom: 5px;
+}
+
+h5 {
+    color: #2f2f2f;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: normal; 
+    margin: 10px;
+    padding-bottom: 20px;
+}
+
+#italics {
+    color: #2f2f2f;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: normal;
+    margin-left: 35px;
+    padding-bottom: 3px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    font-family: sans-serif;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italics {
+    font-style: italic;
+}
+
+#crayons {
+    background-color: #f1f1f1;
+    border: 1px solid rgb(77, 77, 77);
+    float: right;
+    margin: 10px 10px 20px 20px;
+    padding: 8px;
+    width: 272px;
+}
+
+.crayons {
+    border: 1px solid rgb(77, 77, 77);
+    float: right;
+    margin-bottom: 6px;
+    width: 272px;
+}
+
+.textBox {
+    color: #2f2f2f;
+    font-size: 16px;
+    margin: 2px 3px;
+}
