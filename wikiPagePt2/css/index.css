@@ -1,19 +1,19 @@
 h1  {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(77, 77, 77);
     font-family:'Times New Roman', Times, serif;
     font-size: 30px;
     font-weight: 600;
     margin: 10px;
-    padding-bottom: 5px;
+    padding-bottom: 3px;
 }
 
-h5 {
+#notation {
     color: #2f2f2f;
     font-family: sans-serif;
     font-size: 14px;
     font-weight: normal; 
     margin: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
 }
 
 #italics {
@@ -23,7 +23,7 @@ h5 {
     font-style: italic;
     font-weight: normal;
     margin-left: 35px;
-    padding-bottom: 3px;
+    padding: 20px 3px 10px;
 }
 
 a {
@@ -37,6 +37,7 @@ a:hover {
 p {
     font-family: sans-serif;
     font-size: 16px;
+    line-height: 25px;
     margin: 10px;
 }
 
@@ -54,7 +55,6 @@ p {
     float: right;
     margin: 10px 10px 20px 20px;
     padding: 8px;
-    width: 272px;
 }
 
 .crayons {
@@ -70,3 +70,123 @@ p {
     margin: 2px 3px;
 }
 
+#contentMenu {
+    background-color: #f1f1f1;
+    border: 1px solid rgb(77, 77, 77);
+    display: table;
+    margin: 10px;
+    padding:  5px 10px;
+}
+
+h5 {
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+ol {
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 25px;
+    margin-top: 0px;
+    padding-left: 20px;
+}
+
+h4 {
+    border-bottom: 1px solid rgb(77, 77, 77);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 28px;
+    margin: 20px 10px 15px;
+    padding-bottom: 3px;
+}
+
+#crayonBoxes {
+    background-color: #f1f1f1;
+    border: 1px solid rgb(77, 77, 77);
+    float: right;
+    margin: 10px 10px 20px 20px;
+    padding: 8px;
+    padding-right: 10px;
+    width: 222px;
+   
+}
+
+.crayonBoxes {
+    border: 1px solid rgb(77, 77, 77);
+    margin-bottom: 6px;
+    width: 222px;
+}
+
+#dixonCrayon {
+    background-color: #f1f1f1;
+    border: 1px solid rgb(77, 77, 77);
+    float: right;
+    margin: 10px 10px 20px 20px;
+    padding: 8px;
+    padding-right: 10px;
+    width: 302px;
+   
+}
+
+.dixonCrayon {
+    border: 1px solid rgb(77, 77, 77);
+    margin-bottom: 6px;
+    width: 302px;
+}
+
+#crayolaAd {
+    background-color: #f1f1f1;
+    border: 1px solid rgb(77, 77, 77);
+    float: right;
+    margin: 10px 10px 20px 30px;
+    padding: 8px;
+    padding-right: 10px;
+    width: 222px;
+   
+}
+
+.crayolaAd {
+    border: 1px solid rgb(77, 77, 77);
+    margin-bottom: 6px;
+    width: 222px;
+}
+
+#today {
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    margin: 10px;
+    padding-top: 15px;
+}
+
+#crayolaCrayons {
+    background-color: #f1f1f1;
+    border: 1px solid rgb(77, 77, 77);
+    clear: right;
+    float: right;
+    margin: 10px 10px 20px 30px;
+    padding: 8px;
+    padding-right: 10px;
+    width: 222px;
+}
+
+.crayolaCrayons {
+    border: 1px solid rgb(77, 77, 77);
+    margin-bottom: 6px;
+    width: 222px;
+}
+
+ul {
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 25px;
+}
+
+#references {
+    column-width: 480px;
+}
