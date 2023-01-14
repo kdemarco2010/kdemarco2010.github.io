@@ -1,0 +1,42 @@
+/* * { 
+    border: 1px solid black;
+}*/
+
+nav a {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* nav a:active { 
+    color: #7fffd4;
+    text-decoration: none;
+}*/
+
+li.active a {
+    font-size 200%;
+    color: #7fffd4;
+}
+nav {
+    background-color: #2db2a9;
+    text-align: center;
+    position: sticky;
+    top:0px;
+}
+
+ul {
+    padding: 0px;
+}
+
+li {
+    display: inline-block;
+    padding: 10px;
+}
+
+main {
+    height: 1500px;
+}
