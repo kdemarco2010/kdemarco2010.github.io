@@ -6,6 +6,8 @@ body {
 }
 
 ul {
+    background-color: rgb(204, 204, 204);
+    box-shadow: 2px 3px 30px 1px rgb(91, 91, 91);
     display: flex; 
     justify-content: flex-end;
     list-style-type: none;
@@ -14,31 +16,31 @@ ul {
 
 li {
     margin: 12px;
+    padding: 0px 10px;
 }
 
 li a {
     color: rgb(117, 8, 97);
-    font-weight: bold;
+    font-weight: 300;
     text-decoration: none;
 }
 
 li a:hover {
-    color: rgb(217, 11, 179);
-    font-weight: lighter; 
+    color: rgb(94, 7, 78);
+    font-weight: bolder; 
 }
 
+#home {
+    margin-right: auto;
+}
 
 @media screen and (max-width: 768px) {
     body {
-        background-color: skyblue;
+        background-color: rgb(161, 189, 200);
     }
 
     ul {
         flex-direction: column;
-        align-items: center;
-    }
-
-    #home {
-        margin-right: inherit;
+        width: 100px;
     }
 }
