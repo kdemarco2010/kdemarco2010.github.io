@@ -1,14 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,500;0,700;1,300;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Raleway:ital,wght@0,100;0,300;0,600;0,800;1,100;1,300;1,600;1,800&display=swap');
+
+body {
+    margin:0px;
+}
+
+#logo {
+    font-family: 'Great Vibes', cursive;
+    font-size: 30px;
+}
 
 nav {
     background-color: #99b2a5;
 }
 
 nav a {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 20px;
-    text-decoration: none;
     color: #211a26;
+    text-decoration: none;
 }
 
 nav > ul {
@@ -27,36 +34,109 @@ nav > ul > li > a:hover {
 }
 
 .dropdown {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    padding-top: 20px;
     position: relative;
 }
 
-.dropdown ul > li > a:hover {
-    color: #99b2a5;
-}
-
-.dropdown ul > li > a {
-    
-    color: #b3b3b3;
-}
-
 .dropdown ul {
-    display: none;
     flex-direction: column;
     list-style-type: none;
     padding: 0px;
     position: absolute;
     left: 0px;
     top: 100%;
-    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 
+        opacity 0.5s,
+        visibility 0.5s;
 }
 
 .dropdown:hover ul {
-    display: flex;
+    opacity: 1;
+    visibility: visible; 
 }
-
 
 .dropdown ul li {
     background-color: #495d56;
     padding: 12px;
-    width: 80%;
+    width: 100%;
+}
+
+.dropdown ul > li > a {
+    color: #b3b3b3;
+    display: inline-block;
+}
+
+.dropdown ul > li > a:hover {
+    color: #211a26;
+}
+
+#shoppingCart {
+    width: 33px;
+}
+
+#mainImage, #mainImageShop {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 10%;
+}
+
+#mainImageCare {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 30%;
+}
+
+#mainImageBlog {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 0%;
+}
+
+#mainImageSubscription {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 80%;
+}
+
+.shoppingImages {
+    height: 200px;
+    margin: 10px;
+    object-fit: cover;
+    width: 200px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    nav {
+        display: flex;
+        float: left;
+        width: fit-content;
+    }
+
+    #headingImage {
+        display: flex;
+    }
+
+    #mainImage, #mainImageCare, #mainImageBlog, #mainImageShop, #mainImageSubscription {
+        height: 356px;
+    }
+    
+    nav > ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dropdown:hover ul {
+        opacity: 0;
+        visibility: hidden; 
+    }
 }
