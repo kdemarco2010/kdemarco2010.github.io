@@ -80,6 +80,7 @@ nav > ul > li > a:hover {
 
 #mainImage, #mainImageShop {
     height: 200px;
+    max-height: 500px;
     width: 100%;
     object-fit: cover;
     object-position: 0 10%;
