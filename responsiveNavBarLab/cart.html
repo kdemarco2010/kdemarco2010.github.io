@@ -4,7 +4,7 @@
         <meta charset="UTF-8"> 
         <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <title>Care Guides | Watch Me Grow!</title>
+        <title>Shop | Watch Me Grow!</title>
         <link href="css/index.css" rel="stylesheet">
     </head>
     <body>
@@ -33,7 +33,7 @@
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a class="active" href="careGuides.html">Care Guides</a>
+                        <a href="careGuides.html">Care Guides</a>
                         <ul>
                             <li><a href="#">Succulent Care</a></li>
                             <li><a href="#">Cactus Care</a></li>
@@ -61,67 +61,73 @@
 
         <section id="headingImage" >
             <img 
-                id="mainImageCare"
-                alt="Planted Succulents"
-                src="assets/images/plantedPurpleGreenSucculents.jpg">
+                id="mainImageCart"
+                alt="purple green succulents"
+                src="assets/images/succulents5.jpg">
         </section>
 
-        <h1>Care Guides</h1>
-
-        <section id="careGuides">
-            <div class="guides">
-                <img 
-                class="guideImages"
-                alt="Succulent"
-                src="assets/images/succulentCare.jpg">
-
-                <div class="description">
-                    Growing succulents can be a great introduction to 
-                    <br>
-                    gardening, as the can be easy to grow. However it 
-                    <br>
-                    pays to know how to care for your succulents.
-                    <h3>Succulent Care</h3>
-                    <h2>Learn More</h2>
+        <section id="cart">
+            <div class="cartContainer">
+                <div class="cartHeader">
+                    <div class="cartHeading">Shopping Cart</div>
+                    <div class="removeAll"><a href="#">Remove all</a></div>
                 </div>
-            </div>
-
-            <div class="guides">
-                <img 
-                class="guideImagesPositioned"
-                alt="cactus"
-                src="assets/images/cactus.jpg">
-
-                <div class="description">
-                    How you nurture your cactus also contributes  
-                    <br>
-                    to its health. Ensure your plant gets the right 
-                    <br>
-                    amount of water, sunlight  & drainage.
-                    <h3>Cactus Care</h3>
-                    <h2>Learn More</h2>
+                <div class="cartItems">
+                    <div>
+                        <img id="cartImage" alt="potted cactus" src="assets/images/pottedCactus10.jpg">
+                    </div>
+                    <div class="about">
+                        <h1 class="title">Subscription Box</h1>
+                        <h3 class="subtitle">Monthly/ Potted Succulents</h3>
+                    </div>
+                    <div class="counter">
+                        <div class="btn">+</div>
+                        <div class="count">2</div>
+                        <div class="btn">-</div>
+                    </div>
+                    <div class="price">
+                        <div class="amount">$19.99</div>
+                        <div class="save">Add to wish list</div>
+                        <div class="remove">Remove</div>
+                    </div>
                 </div>
-            </div>
+                <div class="cartItems">
+                    <div>
+                        <img id="cartImage" alt="succulent crate" src="assets/images/subBox3.jpg">
+                    </div>
 
-            <div class="guides">
-                <img 
-                class="guideImages"
-                alt="garden tools"
-                src="assets/images/gardening.jpg">
+                    <div class="about">
+                        <h1 class="title">Subscription Box</h1>
+                        <h3 class="subtitle">Monthly/ Potted Succulents</h3>
+                    </div>
 
-                <div class="description">
-                    Expand your gardening and 
-                    <br>
-                    seed saving know how with 
-                    <br>
-                    helpful garden tips and how-to guides
-                    <h3>Gardening</h3>
-                    <h2>Learn More</h2>
+                    <div class="counter">
+                        <div class="btn">+</div>
+                        <div class="count">1</div>
+                        <div class="btn">-</div>
+                    </div>
+                    <div class="price">
+                        <div class="amount">$45.99</div>
+                        <div class="save">Add to wish list</div>
+                        <div class="remove">Remove</div>
+                    </div>
+                </div>
+
+                <hr> 
+
+                <div class="checkout">
+                    <div class="total">
+                        <div>
+                            <div class="subtotal">Sub-Total</div>
+                            <div class="totalItems">3 items</div>
+                        </div>
+                        <div class="totalAmount">$85.97</div>
+                    </div>
+                    <h2>Checkout</h2>
                 </div>
             </div>
         </section>
 
-        
         <footer>
             <ul>
                 <div id="logoFooter">Watch Me Grow!</div>
@@ -183,5 +189,5 @@
                 </ul>
             </ul>
         </footer>
+
     </body>
-</html>
