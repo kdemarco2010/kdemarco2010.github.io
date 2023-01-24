@@ -1,0 +1,137 @@
+Dropdown Tutorial
+In this tutorial, we'll learn how to leverage our CSS to create drop-down menus for our navbar, and also learn about CSS transitions to make the full experience that much more polished.
+
+Instructions
+Creating a basic Nav Bar in HTML
+Begin by creating the basic HTML layout.
+
+Start with a <nav> element and add an unordered list (<ul>) with three child list item (<li>) elements inside. 
+Inside of each <li> element, add an anchor (<a>) element, with a dummy href value of "#", along with the content of "Home", "About", and "Contact" for each <a> element. 
+Finally, also add an id attribute to the first <li> and give it a value of "home".
+01_html.png
+
+Plugging in the Font Awesome icon library and our CSS
+Now, we're going to add the link elements to plug in our icon library, as well as our own custom CSS.
+
+In the <head> element of our index.html, we're going to add the <link> to the Font Awesome library.  You can visit the CDN for the Font Awesome library for that <link>, or you can just copy the provided <link> below:
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+Either way, take your Font Awesome CDN <link> and paste it just below your <title> element.
+Next, create a new file in your /css folder, and call it "style.css".
+Then add the <link> element with the appropriate href attribute pointing to that file (most likely "css/style.css"), as well as the rel attribute with the value of "stylesheet".
+Remember that both the href and rel attributes are needed to correctly plug in your own CSS code.
+02_links.png
+
+Starting to Flex
+Now we're going to start applying some styling, taking advantage of the flexbox module we recently learned about.
+
+In your external style.css, target the <ul> element and set the 'display' property to "flex".
+This will turn your navbar into what's known as a "flexbox container", and also treat each of the child elements inside it as "flex items" (in this case, the <li> elements are the flex items)
+Also, set the 'padding' property to "0px", to clear out the default padding given to <ul> elements.
+By activating flexbox, now our navbar links go side by side, but they still look pretty ugly; we'll need to add some additional style to our <li> elements to clean them up.
+
+Target the <li> elements, and set the 'display' property to "inline"
+This will strip the list items of their bullet-ed display properties.
+Then, set the 'padding' property with a value of "10px" or so, to give them a bit more breathing room.
+After cleaning up our <li> elements, now that we've activated flexbox on the <ul>, a whole bunch of flex-specific properties become available to us.  These are split into two different types: flex container properties and flex item properties.
+
+While still targeting <ul> element in the CSS, and set a property called 'justify-content' to 'center'.
+What happens to all of the links?  They get moved to the center, as we might expect!
+Now change 'justify-content''s value from 'center' to 'flex-end'.
+Where do the links go now? Now they get moved to the right, which is also the END of the FLEXbox container; hence the value name of 'flex-end'.  Makes sense, right?
+Finally, let's add a bit more flair to our navbar, by styling the <nav> element.
+
+Target the <nav> element in your "style.css" file, and give it a background color.
+By now, your CSS should look something like this:
+
+03_css_basic.png
+
+And your preview should somewhat resemble this:
+
+04_preview.png
+
+Customizing the Home link
+Now let's change our Home link from plain text into an icon.
+
+Replace the content of your "Home" anchor <a> tag to a Font Awesome 'house' icon (from https://fontawesome.com/icons)
+in other words, get rid of the text "Home" and replace it with a house icon
+NOTE: remember that only free icons can be used from Font Awesome, so make sure you're not trying to use a PRO icon
+This should be in the same <li> tag that we gave the unique ID value of "home" earlier
+Now that looks interesting, but what if we wanted the home icon on the other side of the navbar away from the other links, as is fairly commonly seen on websites? Let's take care of that now.
+
+In the css, target that #home ID and give it a 'margin-right' property with a value of 'auto'
+What happens to the home icon after you save? It jumps all the way to the left side!
+Setting one side of an element's margin to 'auto' (in this case, 'margin-right')  can sometimes be a very useful trick, especially when utilizing flexbox, so that the browser will know to "auto"-matically take up as much space on that side as it can within the confines of its parent container, in this case, the <ul> element.
+
+By now, our HTML and CSS should look something like this:
+
+05_homeicon.png
+
+and this:
+
+06_homecss.png
+
+With the final preview looking like this:
+
+07_preview.png
+
+Adding the Dropdown Menu HTML
+You should have at least 3 list items from Assignment 3; we're going to continue building off of that.
+
+Add one last list item, which will become the parent element for our dropdown menu
+Give it a class called 'dropdownContainer'
+Inside of that list item, add the usual anchor <a> tag and give it the text "Dropdown Menu. 
+However, we're also going to add ANOTHER <ul> tag inside it, and give it a class called 'dropdownMenu'
+Then, inside of THAT <ul>, add three more <li> tags, each with its own <a> tag inside.
+See the code below for an example of how your <nav> code could look after making the changes above.
+
+nestedul-1.png
+
+With that, you should have the HTML necessary to create a dropdown menu.  However, it looks rather ugly at the moment...
+
+ugly-1.png
+
+Styling the Dropdown Menu in CSS
+It looks that way because we haven't added the CSS to actually style the dropdown menu.  We'll do that next, with the CSS code from the screenshot below.
+
+TIP 1: If you don't have much screen space to work, I recommend commenting out the media query in your CSS until the end of the assignment; it'll be easier to see the changes we're making if you have it in the desktop view, instead of the mobile view.
+
+TIP 2: I recommend filling out the properties in the code below one at a time, and saving after each property, so you can see the effect they're having on the visual display of the dropdown.
+
+css1.png
+
+After applying the code above, your navbar and dropdown menu should look something like the screenshot below.
+
+notugly-1.png
+
+...but, it still doesn't behave like a dropdown menu.  It just sits there, always present.  Let's change that!
+
+Hiding and Revealing the Dropdown Menu
+To get our dropdown menu to be hidden by default, we're going to need to tweak our code a bit.  There are many ways to hide an element in CSS, but the approach we're going to use today involves combining the 'visibility' and 'opacity' properties.
+
+Add in the code below to your 'dropdownMenu' class, and also add the hover state rules as well, so that we can make the dropdown menu appear again when we hover over it or its parent.
+
+css2.png
+
+Look at that! You now have a functioning dropdown menu!
+
+...but we can still do better!
+
+Using CSS Transitions
+CSS Transitions are powerful yet simple to use feature that can add a lot of polish to your web pages when used properly.
+
+To use them, you have to register the properties you want to transition, which in our case are going to be the 'visibility' and 'opacity' properties (note that not all properties can be transitioned in CSS).  We will also make a tweak to our 'top' property, so that we can add a subtle bit of movement to our transition.
+
+Add and modify the code in the screenshot below to add a pretty neat little effect.
+
+css3.png
+
+Look at that!  With just a few lines of code, we've now made the transition of your dropdown menu revealing itself much more interesting.  Well done!
+
+What's That? You Want More?
+If you're looking for more of a challenge, here are some bonus tasks to try and accomplish:
+
+Google some other examples of navbar/dropdown designs, and try to implement them based on what you know in CSS
+Try adding additional dropdown menus to your navbar
+Dropdown menus tend not to work as well on mobile, since you don't really "hover" with your finger on a mobile device, so we usually end up either making the dropdown menu always display, or hide it entirely.  Modify your media query to do one or the other, keep the dropdown menu always hidden or always visible on mobile.
+If the latter, you may also want to try and make the dropdown menu stretch to fill the same amount of width as its parent element.  Visually, that tends to look more consistent.  Take a look at the screenshot below; that dropdown doesn't really fit stylistically with the rest, does it?
+uglymobile.png

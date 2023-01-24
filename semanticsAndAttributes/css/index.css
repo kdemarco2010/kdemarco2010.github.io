@@ -22,7 +22,7 @@ footer {
 }
 
 footer div {
-    margin 12px;
+    margin: 12px;
 }
 
 header h1 {
@@ -58,4 +58,8 @@ figure {
 
 figure img {
     width: 200px;
+}
+
+hr:nth-child(6) {
+    clear: both;
 }
