@@ -1,0 +1,20 @@
+table {
+    border-collapse: collapse;
+}
+
+th {
+    padding-bottom: 12px;
+    padding-right: 24px;
+}
+
+td {
+    padding: 4px 0px;
+}
+
+tr:nth-child(odd) {
+    background-color: #f0f0f0;
+}
+
+tr:hover {
+    background-color: #e0ffe0;
+}
