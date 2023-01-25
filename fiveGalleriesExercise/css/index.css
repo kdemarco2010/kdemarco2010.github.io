@@ -83,8 +83,11 @@
         width: 45%
     }
 
-    #gallery5,
-    #gallery6 {
+    #gallery5 {
         columns: 2 auto;
+    }
+
+    #gallery6 {
+        columns: 1 auto;
     }
 }
