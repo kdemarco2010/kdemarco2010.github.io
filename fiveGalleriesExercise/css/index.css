@@ -59,7 +59,7 @@
 }
 
 #gallery6 {
-    columns: 3 auto;
+    columns: 2 auto;
     column-gap: 24px;
 }
 
@@ -83,7 +83,8 @@
         width: 45%
     }
 
-    #gallery5 {
+    #gallery5,
+    #gallery6 {
         columns: 2 auto;
     }
 }
