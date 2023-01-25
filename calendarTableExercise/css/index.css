@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Shadows+Into+Light&display=swap');
+
+div {
+    overflow-x: auto;
+    max-width: 1000px;
+}
+
+table {
+    border-collapse: collapse;
+    box-shadow: 0px 0px 20px 15px lightgray;
+    height: 600px;
+    table-layout: fixed;
+    margin: 50px;
+    width: 90%
+}
+
+thead tr:nth-child(1) {
+    background-color: rgb(81, 68, 81);
+    font-family: 'Homemade Apple', cursive;
+    font-size: 30px;
+}
+
+tbody {
+    font-family: 'Homemade Apple', cursive;
+    font-size: 20px;
+}
+
+thead tr:nth-child(2) {
+    background-color: rgb(122, 102, 122);
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 20px;
+}
+
+.feb {
+    background-color: rgb(252, 258, 252);
+    opacity: 30%
+}
+
+th,
+td {
+    border: 1px solid black;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+td {
+    padding-left: 15px;
+}
+
+#week1 {
+    background-color: rgb(151, 128, 151);
+}
+
+#week2 {
+    background-color: rgb(185, 158, 185);
+}
+
+#week3 {
+    background-color: rgb(208, 178, 208);
+}
+
+#week3 {
+    background-color: rgb(227, 198, 227);
+}
+
+#week4 {
+    background-color: rgb(248, 218, 248);
+}
+
+#week5 {
+    background-color: rgb(252, 238, 252);
+}

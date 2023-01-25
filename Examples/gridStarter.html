@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Grid Examples</title>
+    <style>
+      .block {
+        padding: 20px;
+      }
+      .block1 {
+        background: linear-gradient(132deg,rgb(23, 0, 16) 0%, rgb(255, 0, 170) 100%);
+        color: rgb(255, 176, 229);
+        grid-area: navbar;
+      }
+      .block2 {
+        background: linear-gradient(142deg,rgb(23, 0, 16) 0%, rgb(255, 0, 170) 100%);
+        color: rgb(255, 176, 229);
+        grid-area: content1;
+      }
+      .block3 {
+        background: linear-gradient(152deg,rgb(23, 0, 16) 0%, rgb(255, 0, 170) 100%);
+        color: rgb(255, 176, 229);
+        grid-area: content2;
+      }
+      .block4 {
+        background: linear-gradient(162deg,rgb(23, 0, 16) 0%, rgb(255, 0, 170) 100%);
+        color: rgb(255, 176, 229);
+        grid-area: content3;
+      }
+      .block5 {
+        background: linear-gradient(172deg,rgb(23, 0, 16) 0%, rgb(255, 0, 170) 100%);
+        color: rgb(255, 176, 229);
+        grid-area: content4;
+      }
+      .block6 {
+        background: linear-gradient(182deg,rgb(23, 0, 16) 0%, rgb(255, 0, 170) 100%);
+        color: rgb(255, 176, 229);
+        grid-area: content5;
+      }
+      .block7 {
+        background: linear-gradient(192deg,rgb(23, 0, 16) 0%, rgb(255, 0, 170) 100%);
+        color: rgb(255, 176, 229);
+        grid-area: content6;
+      }
+      .block8 {
+        background: linear-gradient(202deg,rgb(23, 0, 16) 0%, rgb(255, 0, 170) 100%);
+        color: rgb(255, 176, 229);
+        grid-area: sidebar;
+      }
+      .block9 {
+        background: linear-gradient(202deg,rgb(23, 0, 16) 0%, rgb(255, 0, 170) 100%);
+        color: rgb(255, 176, 229);
+        grid-area: footer;
+      }
+
+      .myGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+            "navbar navbar navbar"
+            "sidebar content1 content1"
+            "sidebar content2 content2"
+            "sidebar content3 content3"
+            "sidebar content4 content4"
+            "sidebar content5 content5"
+            "content6 content6 content6"
+            "footer footer footer";
+      }
+
+      img {
+        height: 100px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="myGrid">
+      <div class="block block1">January 2023</div>
+      <div class="block block2">Monday</div>
+      <div class="block block3">Tuesday</div>
+      <div class="block block4">Wednesday</div>
+      <div class="block block5">Thursday</div>
+      <div class="block block6">Friday</div>
+      <div class="block block7">Saturday</div>
+      <div class="block block8">Sunday</div>
+      <div class="block block9">Notes</div>
+    </div>
+  </body>
+</html>
