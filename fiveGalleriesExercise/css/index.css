@@ -58,6 +58,16 @@
     margin-bottom: 24px;
 }
 
+#gallery6 {
+    columns: 3 auto;
+    column-gap: 24px;
+}
+
+#gallery6 img {
+    width: 100%;
+    margin-bottom: 24px;
+}
+
 @media screen and (max-width: 768px) {
     #gallery1,
     #gallery2 {
