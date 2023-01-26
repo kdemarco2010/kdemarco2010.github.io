@@ -22,7 +22,7 @@
                 <form>
                     <label>What can I help you with</label>
                     <select name="questionType">
-                        <option value="" disabled="disabled" selected="selected">--Select One--</option>
+                        <option value="" disabled selected>--Select One--</option>
                         <option value="commission">Commission</option>
                         <option value="logoDesign">Logo Design</option>
                         <option value="websiteDesign">Website Design</option>
@@ -37,8 +37,25 @@
                     <input type="text" placeholder="Email" name="email">
                     <label>Phone Number</label>
                     <input type="text" placeholder="000-000-0000" name="phoneNumber">
+                    <div>
+                        <label>Preferred Method Of Contact</label>
+                        <fieldset>
+                            <label class="radioFont"><input type="radio" name="radio" value="call">Call</label>
+                            <label class="radioFont"><input type="radio" name="radio" value="text">Text</label>
+                            <label class="radioFont"><input type="radio" name="radio" value="email">Email</label>
+                        </fieldset>
+                    </div>
                     <label>Details</label>
                     <textarea name="details" placeholder="More details about your request..."></textarea>
+                    <div>
+                        <label>Upload Images</label>
+                        <input 
+                            id="imageUpload"
+                            type = "file" 
+                            name = "imageUpload" 
+                            accept = "image/*"
+                            multiple/>
+                    </div>
                     <input type="submit" name="send" value="Send">
                 </form>
             </div>

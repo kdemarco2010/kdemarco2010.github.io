@@ -34,6 +34,19 @@ form label {
     margin: 8px 0px;
 }
 
+form fieldset {
+    margin: 8px 0px 20px;
+}
+
+form legend {
+    font-weight: bold;
+}
+
+.radioFont {
+    font-weight: normal;
+    margin: 0px;
+}
+
 form input[type=text],
 form textarea,
 form select {
@@ -57,4 +70,15 @@ form input[type=submit] {
     color: white;
     border-radius: 5px;
     padding: 16px 24px;
+}
+
+input[type=file] {
+    margin-bottom: 20px;
+}
+
+fieldset {
+    border: 1px solid black;
+    border-radius: 2px;
+    display: flex;
+    justify-content: space-around;
 }
