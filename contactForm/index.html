@@ -10,30 +10,35 @@
     <body>
         <section id="gridContainer">
             <header>
-                <h1>Contact Us</h1>
+                <h1>Contact Form</h1>
                 <p>
-                    Got a question? we'd love to 
+                    Have a request? I'd love to 
                     hear from you.
-                    Send us a message and we'll
+                    Send me a message and I'll
                     respond as soon as possible.
                 </p>
             </header>
             <div id="formContainer">
                 <form>
-                    <label>What can we help you with</label>
+                    <label>What can I help you with</label>
                     <select name="questionType">
-                        <option value="" disabled selected>Select one</option>
+                        <option value="" disabled="disabled" selected="selected">--Select One--</option>
                         <option value="commission">Commission</option>
-                        <option value="carWarranty">Want to extent my car's warranty</option>
+                        <option value="logoDesign">Logo Design</option>
                         <option value="websiteDesign">Website Design</option>
-                        <option value="adRemoval">Need a break from ads</option>
+                        <option value="appDesign">App Design</option>
+                        <option value="productDesign">Product Design</option>
                     </select>
-                    <label>Name</label>
-                    <input type="text" placeholder="First and Last Name" name="name">
+                    <label>First Name</label>
+                    <input type="text" placeholder="First Name" name="firstName">
+                    <label>Last Name</label>
+                    <input type="text" placeholder="Last Name" name="lastName">
                     <label>Email</label>
-                    <input type="text" placeholder="Email" namr="email">
-                    <label>Message</label>
-                    <textarea name="message" placeholder="Type your message here..."></textarea>
+                    <input type="text" placeholder="Email" name="email">
+                    <label>Phone Number</label>
+                    <input type="text" placeholder="000-000-0000" name="phoneNumber">
+                    <label>Details</label>
+                    <textarea name="details" placeholder="More details about your request..."></textarea>
                     <input type="submit" name="send" value="Send">
                 </form>
             </div>
