@@ -34,15 +34,33 @@
                     <label>Last Name</label>
                     <input type="text" placeholder="Last Name" name="lastName">
                     <label>Email</label>
-                    <input type="text" placeholder="Email" name="email">
+                    <input type="email" placeholder="Email" name="email">
                     <label>Phone Number</label>
-                    <input type="text" placeholder="000-000-0000" name="phoneNumber">
+                    <input type="tel" placeholder="000-000-0000" name="phoneNumber">
                     <div>
                         <label>Preferred Method Of Contact</label>
                         <fieldset>
-                            <label class="radioFont"><input type="radio" name="radio" value="call">Call</label>
-                            <label class="radioFont"><input type="radio" name="radio" value="text">Text</label>
-                            <label class="radioFont"><input type="radio" name="radio" value="email">Email</label>
+                            <label for="callRadio" class="radioFont">
+                                <input 
+                                    id="callRadio" 
+                                    type="radio" 
+                                    name="contact" 
+                                    value="call">Call
+                                </label>
+                            <label for="textRadio" class="radioFont">
+                                <input 
+                                    id="textRadio" 
+                                    type="radio" 
+                                    name="contact" 
+                                    value="text">Text
+                                </label>
+                            <label for="emailRadio" class="radioFont">
+                                <input 
+                                    id="emailRadio" 
+                                    type="radio" 
+                                    name="contact" 
+                                    value="email">Email
+                                </label>
                         </fieldset>
                     </div>
                     <label>Details</label>

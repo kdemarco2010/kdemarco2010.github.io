@@ -48,16 +48,15 @@ form legend {
     margin: 0px;
 }
 
-form input[type=text],
-form textarea,
-form select {
+input[type=text],
+input[type=email],
+input[type=tel],
+textarea,
+select {
+    font-family: sans-serif;
     padding: 12px;
     width: 100%;
     margin-bottom: 16px;
-}
-
-textarea {
-    font-family: sans-serif;
 }
 
 textarea::placeholder {
