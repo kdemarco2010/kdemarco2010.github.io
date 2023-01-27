@@ -141,3 +141,12 @@ a {
     display: block;
     margin: 24px;
 }
+
+input:invalid {
+    border-color: red;
+    box-shadow: 0px 0px 8px red;
+}
+
+input:valid {
+    border-color: #10a515;
+}
