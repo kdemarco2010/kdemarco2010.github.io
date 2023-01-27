@@ -92,14 +92,27 @@
                     </div>
                     <label>Details</label>
                     <textarea name="details" placeholder="More details about your request..."></textarea>
-                    <div>
-                        <label>Upload Images</label>
-                        <input 
-                            id="imageUpload"
-                            type = "file" 
-                            name = "photos[]" 
-                            accept = "image/*"
-                            multiple/>
+                    <div id="uploads">
+                        <div>
+                            <label>Upload Images</label>
+                            <div class="max">Max 5MB</div>
+                            <input 
+                                id="imageUpload"
+                                type= "file" 
+                                name= "photos[]" 
+                                accept= "image/*"
+                                multiple/>
+                        </div>
+                        <div>
+                            <label>Upload Documents</label>
+                            <div class="max">Max 5MB</div>
+                            <input 
+                                id="fileUpload"
+                                type= "file" 
+                                name= "files[]" 
+                                accept=".doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+                                multiple/>
+                        </div>
                     </div>
                     <input type="submit" name="send" value="Send">
                 </form>

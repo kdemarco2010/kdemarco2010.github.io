@@ -93,8 +93,18 @@ fieldset {
     justify-content: space-around;
 }
 
+input[type=radio]:checked {
+    accent-color: rgb(215, 54, 240);
+}
+
 #uploads {
     display: flex;
+}
+
+.max {
+    color: gray;
+    font-size: 12px;
+    margin-bottom: 5px;
 }
 
 input:required {
