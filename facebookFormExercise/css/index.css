@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+*:focus {
+    outline: none;
+}
+
 body {
     background-color: #eeeeee;
     font-family: sans-serif;
@@ -147,6 +151,12 @@ input:invalid {
     box-shadow: 0px 0px 8px red;
 }
 
-input:valid {
+input:required:valid {
     border-color: #10a515;
 }
+
+input:focus {
+    border-color: #0d77ff;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0);
+}
+
