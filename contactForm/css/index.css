@@ -93,6 +93,10 @@ fieldset {
     justify-content: space-around;
 }
 
+#uploads {
+    display: flex;
+}
+
 input:required {
     border-color: #450653;
 }
