@@ -100,23 +100,16 @@
                     <textarea name="details" placeholder="More details about your request..."></textarea>
                     <div id="uploads">
                         <div>
-                            <label>Upload Images</label>
+                            <label>Upload Files</label>
                             <div class="max">Max 5MB</div>
                             <input 
                                 id="imageUpload"
                                 type= "file" 
                                 name= "files[]" 
-                                accept= "image/*,.pdf,.zip"
-                                multiple/>
-                        </div>
-                        <div>
-                            <label>Upload Documents</label>
-                            <div class="max">Max 5MB</div>
-                            <input 
-                                id="fileUpload"
-                                type= "file" 
-                                name= "files[]" 
-                                accept=".doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,.ai,.psd,.pdf,.zip"
+                                accept= "image/*,.pdf,.zip,.doc,
+                                    .docx,.xml,application/msword,
+                                    application/vnd.openxmlformats-officedocument.wordprocessingml.document,
+                                    .ai,.psd,.zip"
                                 multiple/>
                         </div>
                     </div>
