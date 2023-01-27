@@ -25,7 +25,7 @@
                     enctype="multipart/form-data">
                     <label>What can I help you with</label>
                     <select name="questionType" required>
-                        <option value="" disabled selected>--Select One--</option>
+                        <option value="" disabled selected>Select Option</option>
                         <option value="commission">Commission</option>
                         <option value="logoDesign">Logo Design</option>
                         <option value="websiteDesign">Website Design</option>
@@ -61,34 +61,40 @@
                         placeholder="000-000-0000" 
                         name="phoneNumber"
                         optional>
-                    <div>
+                    <div id="contactRadioButtons">
                         <label>Preferred Method Of Contact</label>
-                        <fieldset>
-                            <label for="callRadio" class="radioFont">
-                                <input 
-                                    id="callRadio" 
-                                    type="radio" 
-                                    name="contact" 
-                                    value="call">
-                                    Call
+                        <div id="contactInputs">
+                            <div>  
+                                <label for="callRadio" class="radioFont">
+                                    <input 
+                                        id="callRadio" 
+                                        type="radio" 
+                                        name="contact" 
+                                        value="call">
+                                        Call
                                 </label>
-                            <label for="textRadio" class="radioFont">
-                                <input 
-                                    id="textRadio" 
-                                    type="radio" 
-                                    name="contact" 
-                                    value="text">
-                                    Text
+                            </div>
+                            <div>
+                                <label for="textRadio" class="radioFont">
+                                    <input 
+                                        id="textRadio" 
+                                        type="radio" 
+                                        name="contact" 
+                                        value="text">
+                                        Text
                                 </label>
-                            <label for="emailRadio" class="radioFont">
-                                <input 
-                                    id="emailRadio" 
-                                    type="radio" 
-                                    name="contact" 
-                                    value="email">
-                                    Email
+                            </div>
+                            <div>
+                                <label for="emailRadio" class="radioFont">
+                                    <input 
+                                        id="emailRadio" 
+                                        type="radio" 
+                                        name="contact" 
+                                        value="email">
+                                        Email
                                 </label>
-                        </fieldset>
+                            </div>
+                        </div>
                     </div>
                     <label>Details</label>
                     <textarea name="details" placeholder="More details about your request..."></textarea>
@@ -114,7 +120,7 @@
                                 multiple/>
                         </div>
                     </div>
-                    <input type="submit" name="send" value="Send">
+                        <input type="submit" name="send" value="Send">
                 </form>
             </div>
         </section>

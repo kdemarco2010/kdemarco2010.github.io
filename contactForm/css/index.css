@@ -16,7 +16,8 @@ body {
     grid-template-columns: 1fr 600px 1fr;
     grid-template-areas:
         ". header ."
-        ". content .";
+        ". content ."
+        ". footer .";
 }
 
 header {
@@ -39,24 +40,16 @@ form label {
     margin: 8px 0px;
 }
 
-form fieldset {
-    margin: 8px 0px 20px;
-}
-
 form legend {
     font-weight: bold;
-}
-
-.radioFont {
-    font-weight: lighter;
-    margin: 0px;
 }
 
 input[type=text],
 input[type=email],
 input[type=tel],
 textarea,
-select {
+select,
+#contactInputs > div {
     border: 1px solid black;
     border-radius: 2px;
     font-family: sans-serif;
@@ -65,36 +58,58 @@ select {
     margin-bottom: 16px;
 }
 
-textarea::placeholder {
+input:not(:focus):not(:placeholder-shown):invalid {
+    box-shadow: 0px 0px 8px red;
+}
+
+textarea::placeholder,
+input::placeholder {
     font-family: sans-serif;
     opacity: 55%;
 }
 
-input::placeholder {
-    opacity: 55%;
+select {
+    color: rgb(181, 181, 181);
 }
 
-form input[type=submit] {
-    background-color: #450653;
-    border: none;
-    color: white;
-    border-radius: 5px;
-    padding: 16px 24px;
+select:valid {
+    color: black;
+}
+
+#contactInputs {
+    display: flex;
+    gap: 30px;
+}
+
+#contactInputs > div {
+    border: 1px solid #767676;
+    border-radius: 2px;
+    display: flex;
+    justify-content: space-between;
+    transition: .3s;
+}
+
+.radioFont {
+    font-weight: lighter;
+    margin: 0px;
+    transition: .3s;
+}
+
+.radioFont:hover {
+    color:#ce33f0;
+}
+
+input[type=radio]:checked {
+    accent-color: rgb(215, 54, 240);
 }
 
 input[type=file] {
     margin-bottom: 20px;
 }
 
-fieldset {
-    border: 1px solid #767676;
-    border-radius: 2px;
-    display: flex;
-    justify-content: space-around;
-}
-
-input[type=radio]:checked {
-    accent-color: rgb(215, 54, 240);
+input:focus,
+textarea:focus {
+    border-color: #ce33f0;
 }
 
 #uploads {
@@ -107,14 +122,35 @@ input[type=radio]:checked {
     margin-bottom: 5px;
 }
 
-input:required {
-    border-color: #450653;
+input::file-selector-button {
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: lighter;
+    padding: 3px 8px;
+    transition: .3s;
 }
 
-input:not(:focus):not(:placeholder-shown):invalid {
-    box-shadow: 0px 0px 8px red;
+input::file-selector-button:hover {
+    border: 1px solid #ce33f0;
+    background-color: #dcc2e0;
+    border-radius: 3px;
+    padding: 4px 9px;
+} 
+
+input[type=submit] {
+    background-color: #450653;
+    border: 2px solid #450653;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: white;
+    padding: 16px 54px;
+    transition: .5s;
 }
 
-input:focus {
-    border-color: #ce33f0;
+input[type=submit]:hover {
+    background-color: #7d1c8a;
+    border: 2px inset #ce33f0;
 }
+
+
