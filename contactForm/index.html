@@ -21,24 +21,46 @@
             <div id="formContainer">
                 <form 
                     action="https://getform.io/f/2b21f7d9-9cb9-42c5-96f9-ea29ffda914d"
-                    method="POST">
+                    method="POST"
+                    enctype="multipart/form-data">
                     <label>What can I help you with</label>
-                    <select name="questionType">
-                        <option value="" disabled selected >--Select One--</option>
+                    <select name="questionType" required>
+                        <option value="" disabled selected>--Select One--</option>
                         <option value="commission">Commission</option>
                         <option value="logoDesign">Logo Design</option>
                         <option value="websiteDesign">Website Design</option>
                         <option value="appDesign">App Design</option>
                         <option value="productDesign">Product Design</option>
+                        <option value="other">Other - Please describe below</option>
                     </select>
                     <label>First Name</label>
-                    <input type="text" placeholder="First Name" name="firstName">
+                    <input 
+                        type="text" 
+                        placeholder="First Name" 
+                        name="firstName"
+                        minlength="2"
+                        maxlength="50"
+                        required>
                     <label>Last Name</label>
-                    <input type="text" placeholder="Last Name" name="lastName">
+                    <input 
+                        type="text" 
+                        placeholder="Last Name" 
+                        name="lastName"
+                        minlength="2"
+                        maxlength="50"
+                        required>
                     <label>Email</label>
-                    <input type="email" placeholder="Email" name="email">
+                    <input 
+                        type="email" 
+                        placeholder="Email" 
+                        name="email"
+                        required>
                     <label>Phone Number</label>
-                    <input type="tel" placeholder="000-000-0000" name="phoneNumber">
+                    <input 
+                        type="tel" 
+                        placeholder="000-000-0000" 
+                        name="phoneNumber"
+                        optional>
                     <div>
                         <label>Preferred Method Of Contact</label>
                         <fieldset>
@@ -47,21 +69,24 @@
                                     id="callRadio" 
                                     type="radio" 
                                     name="contact" 
-                                    value="call">Call
+                                    value="call">
+                                    Call
                                 </label>
                             <label for="textRadio" class="radioFont">
                                 <input 
                                     id="textRadio" 
                                     type="radio" 
                                     name="contact" 
-                                    value="text">Text
+                                    value="text">
+                                    Text
                                 </label>
                             <label for="emailRadio" class="radioFont">
                                 <input 
                                     id="emailRadio" 
                                     type="radio" 
                                     name="contact" 
-                                    value="email">Email
+                                    value="email">
+                                    Email
                                 </label>
                         </fieldset>
                     </div>
@@ -72,7 +97,7 @@
                         <input 
                             id="imageUpload"
                             type = "file" 
-                            name = "imageUpload" 
+                            name = "file" 
                             accept = "image/*"
                             multiple/>
                     </div>

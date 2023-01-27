@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+*:focus {
+    outline: none;
+}
+
 body {
     background-color: #fafafa;
     font-family:  sans-serif;
@@ -53,6 +57,8 @@ input[type=email],
 input[type=tel],
 textarea,
 select {
+    border: 1px solid black;
+    border-radius: 2px;
     font-family: sans-serif;
     padding: 12px;
     width: 100%;
@@ -85,4 +91,16 @@ fieldset {
     border-radius: 2px;
     display: flex;
     justify-content: space-around;
+}
+
+input:required {
+    border-color: #450653;
+}
+
+input:not(:focus):not(:placeholder-shown):invalid {
+    box-shadow: 0px 0px 8px red;
+}
+
+input:focus {
+    border-color: #ce33f0;
 }
