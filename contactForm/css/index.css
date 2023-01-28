@@ -16,8 +16,7 @@ body {
     grid-template-columns: 1fr 600px 1fr;
     grid-template-areas:
         ". header ."
-        ". content ."
-        ". footer .";
+        ". content .";
 }
 
 header {
@@ -84,7 +83,6 @@ select:valid {
 #contactInputs > div {
     border: 1px solid #767676;
     border-radius: 2px;
-    display: flex;
     justify-content: space-between;
     transition: .3s;
 }
@@ -152,4 +150,13 @@ input[type=submit]:hover {
     border: 2px inset #ce33f0;
 }
 
+@media screen and (max-width: 600px) {
+    #gridContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "content";
+    }
+}
 
