@@ -151,6 +151,10 @@ input[type=submit]:hover {
 }
 
 @media screen and (max-width: 600px) {
+    body {
+        background-color: rgb(124, 124, 180);
+    }
+    
     #gridContainer {
         display: grid;
         grid-template-columns: 1fr;
