@@ -83,7 +83,7 @@ select:valid {
 #contactInputs > div {
     border: 1px solid #767676;
     border-radius: 2px;
-    justify-content: space-between;
+    display: flex;
     transition: .3s;
 }
 
@@ -134,7 +134,7 @@ input::file-selector-button:hover {
     padding: 4px 9px;
 } 
 
-input[type=submit] {
+button[type=submit] {
     background-color: #450653;
     border: 2px solid #450653;
     border-radius: 5px;
@@ -145,22 +145,43 @@ input[type=submit] {
     transition: .5s;
 }
 
-input[type=submit]:hover {
+button[type=submit]:hover {
     background-color: #7d1c8a;
     border: 2px inset #ce33f0;
 }
 
+.required::after {
+    content: "*";
+    color: red;
+}
+
+.required {
+    font-size: 16px;
+}
+
+#requiredNote {
+    display: flex;
+    font-size: 12px;
+    margin-top: 15px;
+}
+
 @media screen and (max-width: 600px) {
-    body {
-        background-color: rgb(124, 124, 180);
-    }
-    
+
     #gridContainer {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas:
             "header"
             "content";
+    }
+
+    #contactInputs > div {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #contactInputs > div input {
+        order: 2;
     }
 }
 

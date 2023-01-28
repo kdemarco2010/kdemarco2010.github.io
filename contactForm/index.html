@@ -23,7 +23,11 @@
                     action="https://getform.io/f/2b21f7d9-9cb9-42c5-96f9-ea29ffda914d"
                     method="POST"
                     enctype="multipart/form-data">
-                    <label>What can I help you with</label>
+                    <label 
+                        class="required" 
+                        title="Required field">
+                        What can I help you with
+                    </label>
                     <select name="questionType" required>
                         <option value="" disabled selected>Select Option</option>
                         <option value="commission">Commission</option>
@@ -33,7 +37,11 @@
                         <option value="productDesign">Product Design</option>
                         <option value="other">Other - Please describe below</option>
                     </select>
-                    <label>First Name</label>
+                    <label 
+                        class="required"
+                        title="Required field">
+                        First Name
+                    </label>
                     <input 
                         type="text" 
                         placeholder="First Name" 
@@ -41,7 +49,11 @@
                         minlength="2"
                         maxlength="50"
                         required>
-                    <label>Last Name</label>
+                    <label 
+                        class="required"
+                        title="Required field">
+                        Last Name
+                    </label>
                     <input 
                         type="text" 
                         placeholder="Last Name" 
@@ -49,7 +61,11 @@
                         minlength="2"
                         maxlength="50"
                         required>
-                    <label>Email</label>
+                    <label 
+                        class="required"
+                        title="Required field">
+                        Email
+                    </label>
                     <input 
                         type="email" 
                         placeholder="Email" 
@@ -64,40 +80,43 @@
                     <div id="contactRadioButtons">
                         <label>Preferred Method Of Contact</label>
                         <div id="contactInputs">
-                            <div>  
-                                <label for="callRadio" class="radioFont">
-                                    <input 
+                            <div> 
+                                <input 
                                         id="callRadio" 
                                         type="radio" 
                                         name="contact" 
-                                        value="call">
-                                        Call
+                                        value="call"> 
+                                <label for="callRadio" class="radioFont">
+                                    Call
                                 </label>
                             </div>
                             <div>
-                                <label for="textRadio" class="radioFont">
-                                    <input 
+                                <input 
                                         id="textRadio" 
                                         type="radio" 
                                         name="contact" 
                                         value="text">
-                                        Text
+                                <label for="textRadio" class="radioFont">
+                                    Text
                                 </label>
                             </div>
                             <div>
-                                <label for="emailRadio" class="radioFont">
-                                    <input 
+                                <input 
                                         id="emailRadio" 
                                         type="radio" 
                                         name="contact" 
                                         value="email">
-                                        Email
+                                <label for="emailRadio" class="radioFont">
+                                    Email
                                 </label>
                             </div>
                         </div>
                     </div>
                     <label>Details</label>
-                    <textarea name="details" placeholder="More details about your request..."></textarea>
+                    <textarea 
+                        name="details" 
+                        placeholder="More details about your request...">
+                    </textarea>
                     <div id="uploads">
                         <div>
                             <label>Upload Files</label>
@@ -113,7 +132,11 @@
                                 multiple/>
                         </div>
                     </div>
-                        <input type="submit" name="send" value="Send">
+                    <button type="submit" name="send">Send</button>
+                    <div id="requiredNote">
+                        <div class="required"></div>
+                        <div>Required fields</div>
+                    </div>
                 </form>
             </div>
         </section>
