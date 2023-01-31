@@ -25,7 +25,7 @@ p {
 }
 
 h1 {
-  color: white;
+  color: #f0eff4;
   font-size: 60px;
   margin-bottom: 0;
 }
@@ -42,12 +42,12 @@ a {
 nav,
 nav a,
 footer a {
-  color: rgb(0, 0, 0);
+  color: #291528;
 }
 
 nav a:hover,
 footer a:hover {
-  color: purple;
+  color: #9e829c;
   text-decoration: underline;
 }
 
@@ -60,7 +60,7 @@ footer ul {
 ****************************************************************************/
 #siteGrid {
   background-color: white;
-  box-shadow: 3px 3px 3px black;
+  box-shadow: 3px 3px 3px #3a3e3b;
   display: grid;
   grid-template-columns: 1fr 1000px 1fr;
   grid-auto-rows: minmax(50px, auto);
@@ -97,6 +97,7 @@ nav {
 
 footer {
   bottom: 0;
+  background-color: #f0eff4;
   display: flex;
   height: 250px;
   justify-content: center;
@@ -140,7 +141,7 @@ nav .socialMedia {
 nav,
 nav a,
 footer a {
-  color: indigo;
+  color: #291528;
 }
 
 nav a:hover,
@@ -176,8 +177,8 @@ nav h2 {
 #hero a,
 .card a {
   background-color: white;
-  color: indigo;
-  border: 2px solid indigo;
+  color: #291528;
+  border: 2px solid #291528;
   border-radius: 24px;
   display: inline-block;
   padding: 8px 16px;
@@ -200,12 +201,12 @@ nav h2 {
 }
 
 .card {
-  border: 2px solid indigo;
-  color: indigo;
+  border: 2px solid #291528;
+  color: #291528;
   margin: 48px 24px 24px;
   padding: 12px 12px 24px;
   text-align: center;
-  box-shadow: 4px 4px 8px 0px grey;
+  box-shadow: 4px 4px 8px 0px #3a3e3b;
   flex: 1;
 }
 
