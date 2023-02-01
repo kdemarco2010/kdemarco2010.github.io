@@ -217,7 +217,7 @@ nav h2 {
   display: flex;
 }
 
-.card {
+.card.content {
   border: 2px solid #3a164c;
   color: #3a164c;
   margin: 48px 24px 24px;
@@ -237,6 +237,29 @@ nav h2 {
 ****************************************************************************/
 #gallery {
   text-align: center;
+}
+
+.card-wrapper {
+  display: felx;
+}
+
+.card.gallery {
+  border: 2px solid #3a164c;
+  color: #3a164c;
+  margin: 48px 24px 24px;
+  padding: 12px 12px 24px;
+  text-align: center;
+  box-shadow: 4px 4px 8px 0px #29476a;
+  width: calc(100%/3)
+}
+
+.image-wrapper {
+  height: 22vw;
+}
+
+.image-wrapper img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 /****************************************************************************
