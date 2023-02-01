@@ -65,6 +65,7 @@ footer ul {
 .glider {
   background-attachment: fixed;
   background-image: url("../assets/images/abstractBackground.jpg");
+  background-size: cover;
   height: 200px;
 }
 
