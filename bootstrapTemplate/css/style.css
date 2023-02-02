@@ -267,6 +267,8 @@ nav h2 {
   Carousel Styles
 ****************************************************************************/
 #carousel {
+  box-shadow: 4px 4px 8px 0px #29476a;
+  margin: 25px 0px;
   text-align: center;
 }
 
@@ -294,5 +296,10 @@ nav h2 {
   nav ul {
     margin: 4px 0;
   }
+
+  #hero a:hover,
+  .card a:hover {
+    transform: scale(1.02);
+}
 
 }
