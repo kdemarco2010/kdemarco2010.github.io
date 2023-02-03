@@ -1,9 +1,13 @@
 #hero {
+    align-items: center;
     background-attachment: fixed;
     background-image: url("assets/images/nationalParkPoster.jpg");
     background-position: bottom center;
     background-size: cover;
+    display: flex;
     height: 100vh;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
 }
 
@@ -11,7 +15,6 @@
     color: #ffffff;
     font-family: sans-serif;
     font-size: 60px;
-    padding-top: 250px;
     text-shadow: 2px 2px 10px #04182c;
 }
 
