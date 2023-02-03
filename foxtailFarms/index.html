@@ -8,37 +8,47 @@
   </head>
   <body>
     <div id="siteGrid">
-        <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <nav 
+            class="navbar bg-dark navbar-expand-md bg-body-tertiary" 
+            data-bs-theme="dark">
             <div class="container-fluid">
                 <a 
                     class="navbar-brand" 
                     href="#">
                     <img 
-                        id="foxtailLogo"
+                        class="d-inline-block align-text-top"
+                        id="foxtailNavLogo"
                         alt="Foxtail Farms Logo"
                         src="assets/images/foxtailLogoDarkT.png">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <button 
+                    class="navbar-toggler" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navbarText" 
+                    aria-controls="navbarText" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarText">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
+                    <ul class="navbar-nav mx-auto mb-2">
+                        <li class="nav-item px-lg-3">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item px-lg-3">
                             <a class="nav-link" href="#">Science</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item px-lg-3">
                             <a class="nav-link" href="#">About Us</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item px-lg-3">
                             <a class="nav-link" href="#">Recipes</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item px-lg-3">
                             <a class="nav-link" href="#">Contact</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item px-lg-3">
                             <a class="nav-link" href="#">Market</a>
                         </li>
                     </ul>
@@ -47,201 +57,303 @@
                 </div>
             </div>
         </nav>
-      <section id="hero">
-        <h1>Cultivating the 
-            <br>
-            "perfect" produce.
-        </h1>
-      </section>
-      <section id="contentContainer"  class="container text-center">
-        <section id="marketContainer"  class="row gx-5">
-            <div id="market" class="col">
-                <h2>Market</h2>
-                <p>We strive to offer high quality produce utilizing cutting edge technology. This innovative approach allows us to selectively cultivate the “perfect” produce.</p>
-            </div>
-            <div id="marketLogo" class="col">
-                <img 
-                    id="foxtailLogo"
-                    alt="Foxtail Farms Logo"
-                    src="assets/images/foxtailLogoLightT.png">
-            </div>
+        <section id="hero">
+            <h1>Cultivating the 
+                <br>
+                "perfect" produce.
+            </h1>
         </section>
-            <section id="gallery">
-                <div id="carouselExample" class="carousel carousel-dark slide">
+        <section id="contentContainer"  class="container text-center">
+            <section id="marketContainer"  class="row gx-5">
+                <div id="market" class="col">
+                    <h2>Market</h2>
+                    <p>We strive to offer high quality produce utilizing cutting edge technology. This innovative approach 
+                        allows us to selectively cultivate the “perfect” produce.
+                    </p>
+                </div>
+                <div id="marketLogo" class="col">
+                    <img 
+                        id="foxtailLogo"
+                        alt="Foxtail Farms Logo"
+                        src="assets/images/foxtailLogoLightT.png">
+                </div>
+            </section>
+                <section id="gallery">
+                    <div id="carouselExample" class="carousel carousel-dark slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="cards-wrapper">
+                                    <div class="card gallery">
+                                        <div class="image-wrapper">
+                                            <img src="assets/images/market9.jpg" class="card-img-top" alt="strawberries">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Strawberries</h5>
+                                            <p class="card-text">Raw strawberries are 91% water, 8% carbohydrates, 1% protein, 
+                                                and contain negligible fat. A 100 gram reference amount of strawberries supplies 
+                                                33 kilocalories, is a rich source of vitamin C (71% of the Daily Value, DV), a good 
+                                                source of manganese (18% DV), and provides several other vitamins and dietary minerals 
+                                                in small amounts. Strawberries contain a modest amount of essential unsaturated fatty 
+                                                acids in the achene (seed) oil.
+                                            </p>
+                                            <h5>$2.51/ lb</h5>
+                                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                    <div class="card gallery d-none d-md-block">
+                                        <div class="image-wrapper">
+                                            <img src="assets/images/market8.jpg" class="card-img-top" alt="raspberries">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Raspberries</h5>
+                                            <p class="card-text">Raw raspberries are 86% water, 12% carbohydrates, and have about 1% 
+                                                each of protein and fat (table). In a 100 gram amount, raspberries supply 53 kilocalories 
+                                                and 6.5 grams of dietary fiber. Raspberries are a rich source (20% or more of the Daily 
+                                                Value, DV) of vitamin C (32% DV), manganese (32% DV) and dietary fiber (26% DV), but 
+                                                otherwise have low content of micronutrients (table). Raspberries are a low-glycemic 
+                                                index food, with total sugar content of only 4% and no starch.[25]
+                                                The aggregate fruit structure contributes to raspberry's nutritional 
+                                                value, as it increases the proportion of dietary fiber, which is among the highest 
+                                                known in whole foods, up to 6% fiber per total weight.
+                                            </p>
+                                            <h5>$6.88/ lb</h5>
+                                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                    <div class="card gallery d-none d-lg-block">
+                                        <div class="image-wrapper">
+                                            <img src="assets/images/market7.jpg" class="card-img-top" alt="peaches">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Apricots</h5>
+                                            <p class="card-text">In a 100-gram amount, raw apricots supply 48 Calories and are 
+                                                composed of 11% carbohydrates, 1% protein, less than 1% fat, and 86% water (table). 
+                                                Raw apricots are a moderate source of vitamin A and vitamin C (12% of the Daily Value each).
+                                            </p>
+                                            <h5>$2.54/ lb</h5>
+                                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="cards-wrapper">
+                                    <div class="card gallery">
+                                        <div class="image-wrapper">
+                                            <img src="assets/images/market6.jpg" class="card-img-top" alt="peppers">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Bell Peppers</h5>
+                                            <p class="card-text">A raw red bell pepper is 94% water, 5% carbohydrates, 1% protein, 
+                                                and contains negligible fat (table). A 100 gram (3.5 oz) reference amount supplies 
+                                                26 calories, and is a rich source of vitamin C - containing 158% of the Daily Value 
+                                                (DV) - vitamin A (20%), and vitamin B6 (23% DV), with moderate contents of riboflavin 
+                                                (12%), folate (12% DV), and vitamin E (11% DV). A red bell pepper supplies twice the 
+                                                vitamin C and eight times the vitamin A content of a green bell pepper.
+                                            </p>
+                                            <h5>$2.09/ lb</h5>
+                                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                    <div class="card gallery d-none d-md-block">
+                                        <div class="image-wrapper">
+                                            <img src="assets/images/market5.jpg" class="card-img-top" alt="apples">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Apples</h5>
+                                            <p class="card-text">A raw apple is 86% water and 14% carbohydrates, with negligible content 
+                                                of fat and protein (table). A reference serving of a raw apple with skin weighing 100 grams 
+                                                provides 52 calories and a moderate content of dietary fiber.[70] Otherwise, there is low 
+                                                content of micronutrients, with the Daily Values of all falling below 10%
+                                            </p>
+                                            <h5>$1.31/ lb</h5>
+                                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                    <div class="card gallery d-none d-lg-block">
+                                        <div class="image-wrapper">
+                                            <img src="assets/images/market3.jpg" class="card-img-top" alt="tomatoes">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Tomatoes</h5>
+                                            <p class="card-text">A raw tomato is 95% water, contains 4% carbohydrates, and has less than 
+                                                1% each of fat and protein (table). In a 100 grams (3.5 oz) reference amount, raw tomatoes 
+                                                supply 18 kilocalories and are a moderate source of vitamin C (17% of the Daily Value), but 
+                                                otherwise have no significant micronutrient content
+                                            </p>
+                                            <h5>$2.50/ lb</h5>
+                                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="cards-wrapper">
+                                    <div class="card gallery">
+                                        <div class="image-wrapper">
+                                            <img src="assets/images/market4.jpg" class="card-img-top" alt="carrots">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Carrots</h5>
+                                            <p class="card-text">Raw carrots are 88% water, 9% carbohydrates, 0.9% protein, 2.8% 
+                                                dietary fiber, 1% ash and 0.2% fat.[72] Carrot dietary fiber comprises mostly cellulose, 
+                                                with smaller proportions of hemicellulose, lignin and starch.[68] Free sugars in carrot 
+                                                include sucrose, glucose, and fructose
+                                            </p>
+                                            <h5>$1/ lb</h5>
+                                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                    <div class="card gallery d-none d-md-block">
+                                        <div class="image-wrapper">
+                                            <img src="assets/images/market1.jpg" class="card-img-top" alt="cherries">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Cherries</h5>
+                                            <p class="card-text">Raw sweet cherries are 82% water, 16% carbohydrates, 1% protein, and negligible 
+                                                in fat (table). As raw fruit, sweet cherries provide little nutrient content per 100 g serving, 
+                                                as only dietary fiber and vitamin C are present in moderate content, while other vitamins and 
+                                                dietary minerals each supply less than 10% of the Daily Value (DV) per serving, respectively
+                                            </p>
+                                            <h5>$5.54/ lb</h5>
+                                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                    <div class="card gallery d-none d-lg-block">
+                                        <div class="image-wrapper">
+                                            <img src="assets/images/market2.jpg" class="card-img-top" alt="artichoke">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Artichoke</h5>
+                                            <p class="card-text">Cooked unsalted artichoke is 82% water, 12% carbohydrates, 3% protein, 
+                                                and 3% fat (table). In a 100 gram reference serving, cooked artichoke supplies 74 calories, 
+                                                is a rich source (20% or more of the Daily Value, DV) of folate, and is a moderate source 
+                                                (10-19% DV) of vitamin K (16% DV), magnesium, sodium, and phosphorus (10-12% DV)
+                                            </p>
+                                            <h5>$1.76/ lb</h5>
+                                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="cards-wrapper">
+                                    <div class="card gallery">
+                                        <div class="image-wrapper">
+                                            <img src="assets/images/produce.jpg" class="card-img-top" alt="carrots">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Market</h5>
+                                            <p class="card-text">We strive to offer high quality produce utilizing cutting edge technology. 
+                                                This innovative approach allows us to selectively cultivate the “perfect” produce.”
+                                            </p>
+                                            <h5>Price/ lb</h5>
+                                            <a href="#" class="btn btn-primary">View More Produce</a>
+                                        </div>
+                                    </div>
+                                    <div class="card gallery d-none d-md-block">
+                                        <div class="image-wrapper">
+                                            <img src="assets/images/fruit.jpg" class="card-img-top" alt="cherries">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Fruits</h5>
+                                            <p class="card-text">
+                                                Our produce has been tuned to perfection. Quality produce at a great price. 
+                                                See what fruit we have to offer! 
+                                                You won't be disappointed!
+                                            </p>
+                                            <h5>Price/ lb</h5>
+                                            <a href="#" class="btn btn-primary">View More Fruits</a>
+                                        </div>
+                                    </div>
+                                    <div class="card gallery d-none d-lg-block">
+                                        <div class="image-wrapper">
+                                            <img src="assets/images/vegetables.jpg" class="card-img-top" alt="artichoke">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Vegetables</h5>
+                                            <p class="card-text">
+                                                Our produce has been tuned to perfection. Quality produce at a great price. 
+                                                See what vegetables we have to offer! 
+                                                You won't be disappointed!
+                                            </p>
+                                            <h5>Price/ lb</h5>
+                                            <a href="#" class="btn btn-primary">View More Vegetables</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </section>
+            <section id="carousel">
+                <div id="carouselExampleCaptions" class="carousel slide carousel-fade">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <div class="cards-wrapper">
-                                <div class="card gallery">
-                                    <div class="image-wrapper">
-                                        <img src="assets/images/market9.jpg" class="card-img-top" alt="strawberries">
-                                    </div>
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-primary">Add to Cart</a>
-                                    </div>
-                                </div>
-                                <div class="card gallery">
-                                    <div class="image-wrapper">
-                                        <img src="assets/images/market8.jpg" class="card-img-top" alt="raspberries">
-                                    </div>
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-primary">Add to Cart</a>
-                                    </div>
-                                </div>
-                                <div class="card gallery">
-                                    <div class="image-wrapper">
-                                        <img src="assets/images/market7.jpg" class="card-img-top" alt="peaches">
-                                    </div>
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-primary">Add to Cart</a>
-                                    </div>
-                                </div>
+                        <img src="assets/images/naturalEnergy.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Natural Energy</h3>
+                            <a class="carouselImageDetails" href="#">Learn More</a>
+                        </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/patent4.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Patented Technology</h3>
+                                <a class="carouselImageDetails" href="#">Learn More</a>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <div class="cards-wrapper">
-                            <div class="card gallery">
-                                <div class="image-wrapper">
-                                    <img src="assets/images/market6.jpg" class="card-img-top" alt="peppers">
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Add to Cart</a>
-                                </div>
-                            </div>
-                            <div class="card gallery">
-                                <div class="image-wrapper">
-                                    <img src="assets/images/market5.jpg" class="card-img-top" alt="apples">
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Add to Cart</a>
-                                </div>
-                            </div>
-                            <div class="card gallery">
-                                <div class="image-wrapper">
-                                    <img src="assets/images/market3.jpg" class="card-img-top" alt="tomatoes">
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Add to Cart</a>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="cards-wrapper">
-                                <div class="card gallery">
-                                    <div class="image-wrapper">
-                                        <img src="assets/images/market4.jpg" class="card-img-top" alt="carrots">
-                                    </div>
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-primary">Add to Cart</a>
-                                    </div>
-                            </div>
-                            <div class="card gallery">
-                                <div class="image-wrapper">
-                                    <img src="assets/images/market1.jpg" class="card-img-top" alt="cherries">
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Add to Cart</a>
-                                </div>
-                            </div>
-                            <div class="card gallery">
-                                <div class="image-wrapper">
-                                    <img src="assets/images/market2.jpg" class="card-img-top" alt="artichoke">
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Add to Cart</a>
-                                </div>
-                            </div>
+                            <img src="assets/images/genetics.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Advanced Genetics Research</h3>
+                                <a class="carouselImageDetails" href="#">Learn More</a>
                             </div>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
             </section>
-        <section id="carousel">
-            <div id="carouselExampleCaptions" class="carousel slide carousel-fade">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <section class="twoCards">
+                <div class="card content">
+                    <h3>More Interesting Stuff</h3>
+                    <p>
+                    Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit,
+                    sed do eiusmod tempor.
+                    </p>
+                    <a href="#">LEARN MORE</a>
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img src="assets/images/abstract10.jpg" class="d-block w-100" alt="...">
-                      <div class="carousel-caption d-none d-md-block">
-                          <h5>First slide label</h5>
-                          <p>Some representative placeholder content for the first slide.</p>
-                      </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="assets/images/abstract11.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Second slide label</h5>
-                            <p>Some representative placeholder content for the second slide.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="assets/images/abstract13.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Third slide label</h5>
-                            <p>Some representative placeholder content for the third slide.</p>
-                        </div>
-                    </div>
+                <div class="card content">
+                    <h3>More Interesting Stuff</h3>
+                    <p>
+                    Sunt in culpa qui officia deserunt
+                    mollit anim id est laborum.
+                    </p>
+                    <a href="#">LEARN MORE</a>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
+            </section>
         </section>
-        <section class="twoCards">
-            <div class="card content">
-                <h3>More Interesting Stuff</h3>
-                <p>
-                  Lorem ipsum dolor sit amet,
-                  consectetur adipisicing elit,
-                  sed do eiusmod tempor.
-                </p>
-                <a href="#">LEARN MORE</a>
-            </div>
-            <div class="card content">
-                <h3>More Interesting Stuff</h3>
-                <p>
-                  Sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
-                </p>
-                <a href="#">LEARN MORE</a>
-            </div>
-        </section>
-      </section>
     </div>
     <footer>
       <div id="followMe">
@@ -254,6 +366,10 @@
         </ul>
       </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" 
+        crossorigin="anonymous">
+    </script>
   </body>
 </html>

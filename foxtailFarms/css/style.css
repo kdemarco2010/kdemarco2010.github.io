@@ -18,15 +18,28 @@ h2 {
     font-size: 52px;
 }
 
+.card-body h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
 #market p {
     color:#e1a177;
     font-family: 'Montserrat', sans-serif; 
     font-style: italic;
 }
 
-h3,
-a {
-  font-family: 'Secular One', sans-serif;
+.card-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.carousel-item h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 3px 2px 5px black;
 }
 
 h4 {
@@ -40,7 +53,8 @@ h4 {
 }
 
 a {
-  text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
 }
 
 nav,
@@ -125,12 +139,22 @@ nav {
   Nav/Footer styles
 ****************************************************************************/
 .navbar-nav {
-    display: flex;
-    justify-content: space-around;
+    font-size: 20px;
 }
 
-.nav-item {
-    padding: 30px;
+
+
+#foxtailNavLogo {
+    height: 100px;
+    margin-left: 40px;
+}
+
+.navbar-toggler {
+    border-color: #e1a177;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(225,161,119)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 footer {
@@ -143,24 +167,13 @@ footer {
   width: 100%;
 }
 
-#navLinks {
-  justify-content: center;
-}
-
-#navLinks,
 .socialMedia {
   display: flex;
   list-style-type: none;
 }
 
-#navLinks li,
 .socialMedia li {
   padding: 0 4px;
-}
-
-nav .socialMedia {
-  justify-content: flex-end;
-  padding-left: 0;
 }
 
 #followMe {
@@ -174,11 +187,6 @@ nav .socialMedia {
 
 .socialMedia i {
   font-size: 20px;
-}
-
-nav,
-nav a {
-  color: #3a164c;
 }
 
 footer,
@@ -269,7 +277,15 @@ h1 {
   Gallery styles
 ****************************************************************************/
 #gallery {
-  text-align: center;
+    display: flex;
+    text-align: center;
+}
+
+.card {
+    align-items: center;
+    display: flex;
+    min-width: 232px;
+    justify-content: center;
 }
 
 .cards-wrapper {
@@ -292,23 +308,42 @@ h1 {
 
 .image-wrapper img {
   max-width: 100%;
-  max-height: 100%;
+  min-width: 204px;
+  height: 20vw;
+  object-fit: cover;
 }
 
+.card-body p {
+    overflow-y: auto;
+    max-height: 100px;
+}
 /****************************************************************************
   Carousel Styles
 ****************************************************************************/
 #carousel {
-  box-shadow: 4px 4px 8px 0px #29476a;
+  box-shadow: 4px 4px 8px 0px #000000;
   margin: 25px 0px;
   text-align: center;
+}
+
+#carousel a {
+    color: #ffffff;
+    font-size: 25px;
+    text-shadow: 2px 2px 5px black;
+}
+
+#carousel a:hover {
+    background-color: #e1a177b6;
+    border-radius: 50px;
+    font-weight: bold;
+    padding: 8px;
 }
 
 /****************************************************************************
   Media Query - Mobile Breakpoint
 ****************************************************************************/
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1015px) {
   #siteGrid {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -318,7 +353,10 @@ h1 {
       "footerArea";
   }
 
-  
+  .navbar-nav {
+    font-size: 18px;
+}
+
   .twoCards {
     flex-direction: column;
   }
@@ -329,11 +367,4 @@ h1 {
     transform: scale(1.02);
 }
 
-}
-
-@media screen and (max-width: 992px) {
-
-    .nav-item {
-        padding: 5px;
-    }
 }
