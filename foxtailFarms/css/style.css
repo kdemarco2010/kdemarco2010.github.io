@@ -1,0 +1,339 @@
+/* Google Font API imports - found at https://fonts.google.com/ */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,400;0,700;1,600&display=swap');
+
+/*****************************************************************************
+  Heading, Link, and Misc. Styles
+*****************************************************************************/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h2 {
+    color: #e1a177;
+    font-family: 'Lobster', cursive;
+    font-size: 52px;
+}
+
+#market p {
+    color:#e1a177;
+    font-family: 'Montserrat', sans-serif; 
+    font-style: italic;
+}
+
+h3,
+a {
+  font-family: 'Secular One', sans-serif;
+}
+
+h4 {
+  font-family: 'Assistant', sans-serif;
+}
+
+
+h4 {
+  font-size: 18px;
+  margin-top: 4px;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav,
+nav a {
+  color: #3a164c;
+}
+
+footer a {
+  color: #ebf2f4
+}
+
+nav a:hover {
+  color: #9f9bc0;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color: #9f9bc0;
+  text-decoration: underline;
+}
+
+footer ul {
+  padding: 0;
+}
+
+.glider {
+  background-attachment: fixed;
+  background-image: url("../assets/images/abstractBackground.jpg");
+  background-size: cover;
+  height: 200px;
+}
+
+/****************************************************************************
+  Grid styles
+****************************************************************************/
+#siteGrid {
+  background-color: #ffffff;
+  box-shadow: 3px 3px 3px #1d012b;
+  display: grid;
+  grid-template-columns: 1fr 1000px 1fr;
+  grid-auto-rows: minmax(50px, auto);
+  grid-template-areas:
+    "navArea navArea navArea"
+    "heroArea heroArea heroArea"
+    ". contentArea ."
+    "footerArea footerArea footerArea";
+  margin-bottom: 250px;
+  position: relative;
+  z-index: 2;
+}
+
+nav {
+  grid-area: navArea;
+}
+
+#hero {
+  grid-area: heroArea;
+}
+
+#contentContainer {
+  grid-area: contentArea;
+}
+
+#marketContainer {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px;
+}
+
+#market {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+}
+
+#foxtailLogo {
+    max-width: 350px;
+}
+
+/****************************************************************************
+  Nav/Footer styles
+****************************************************************************/
+.navbar-nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-item {
+    padding: 30px;
+}
+
+footer {
+  bottom: 0;
+  background-color: #3a164c;
+  display: flex;
+  height: 250px;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+}
+
+#navLinks {
+  justify-content: center;
+}
+
+#navLinks,
+.socialMedia {
+  display: flex;
+  list-style-type: none;
+}
+
+#navLinks li,
+.socialMedia li {
+  padding: 0 4px;
+}
+
+nav .socialMedia {
+  justify-content: flex-end;
+  padding-left: 0;
+}
+
+#followMe {
+  display: flex;
+  align-items: flex-end;
+}
+
+.socialMedia {
+  padding-left: 50px;
+}
+
+.socialMedia i {
+  font-size: 20px;
+}
+
+nav,
+nav a {
+  color: #3a164c;
+}
+
+footer,
+footer a {
+  color: #ebf2f4;
+}
+
+nav a:hover,
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+/****************************************************************************
+  Hero styles
+****************************************************************************/
+
+#hero {
+    align-items: center;
+    background-attachment: fixed;
+    background-image: url("../assets/images/naturalEnergyHero.jpg");
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    justify-content: center;
+    text-align: center;
+}
+
+
+h1 {
+    color: #ffffff;
+    font-family: 'Lobster', cursive;
+    text-shadow: 2px 2px 9px black;
+    font-size: 60px;
+  }
+
+/****************************************************************************
+  Link styles
+****************************************************************************/
+
+#hero a,
+.card a {
+  background-color: #ffffff;
+  color: #e1a177;
+  border: 2px solid #e1a177;
+  border-radius: 24px;
+  display: inline-block;
+  padding: 8px 16px;
+  margin-top: 12px;
+  min-width: 150px;
+  transition: transform 0.25s;
+}
+
+#hero a:hover,
+.card a:hover {
+    background-color: #e1a177;
+    color: #ffffff;
+    border: 2px solid #e1a177;
+    transform: scale(1.05);
+}
+
+/****************************************************************************
+  Card styles
+****************************************************************************/
+
+.twoCards {
+  display: flex;
+}
+
+.card.content {
+  border: 2px solid #000000;
+  color: #000000;
+  margin: 48px 24px 24px;
+  padding: 12px 12px 24px;
+  text-align: center;
+  box-shadow: 4px 4px 8px 0px #000000;
+  flex: 1;
+}
+
+.card p {
+  font-size: 18px;
+  min-height: 100px;
+}
+
+/****************************************************************************
+  Gallery styles
+****************************************************************************/
+#gallery {
+  text-align: center;
+}
+
+.cards-wrapper {
+  display: flex;
+}
+
+.card.gallery {
+  border: 2px solid #000000;
+  color: #000000;
+  margin: 48px 24px 24px;
+  padding: 12px 12px 24px;
+  text-align: center;
+  box-shadow: 4px 4px 8px 0px #000000;
+  width: calc(100%/3)
+}
+
+.image-wrapper {
+  height: 22vw;
+}
+
+.image-wrapper img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/****************************************************************************
+  Carousel Styles
+****************************************************************************/
+#carousel {
+  box-shadow: 4px 4px 8px 0px #29476a;
+  margin: 25px 0px;
+  text-align: center;
+}
+
+/****************************************************************************
+  Media Query - Mobile Breakpoint
+****************************************************************************/
+
+@media screen and (max-width: 1000px) {
+  #siteGrid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "navArea"
+      "heroArea"
+      "contentArea"
+      "footerArea";
+  }
+
+  
+  .twoCards {
+    flex-direction: column;
+  }
+
+
+  #hero a:hover,
+  .card a:hover {
+    transform: scale(1.02);
+}
+
+}
+
+@media screen and (max-width: 992px) {
+
+    .nav-item {
+        padding: 5px;
+    }
+}

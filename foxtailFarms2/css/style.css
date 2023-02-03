@@ -1,0 +1,49 @@
+/* Google Font API imports - found at https://fonts.google.com/ */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,400;0,700;1,600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+/****************************************************************************
+  Nav Bar
+****************************************************************************/
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-item {
+    padding: 30px;
+}
+
+
+
+/****************************************************************************
+  Hero
+****************************************************************************/
+
+#hero {
+    align-items: center;
+    background-attachment: fixed;
+    background-image: url("assets/images/naturalEnergyHero");
+    background-position: bottom center;
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+/****************************************************************************
+  Media Query - Mobile Breakpoint
+****************************************************************************/
+
+@media screen and (max-width: 992px) {
+
+    .nav-item {
+        padding: 5px;
+    }
+}
