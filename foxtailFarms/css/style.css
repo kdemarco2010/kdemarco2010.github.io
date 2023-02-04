@@ -368,3 +368,17 @@ h1 {
 }
 
 }
+
+@media screen and (max-width: 576px) {
+    
+    footer {
+        grid-area: footerArea;
+        position: static;
+    }
+
+    #siteGrid {
+        margin-bottom: 0;
+        position:absolute;
+        z-index: auto;
+    }
+}

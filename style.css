@@ -48,6 +48,15 @@
     font-family: 'Poppins', sans-serif;
 }
 
+h5 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 18px;
+}
+
 .container .btn {
     background-color: #044567;
     border-color: #04182c;
