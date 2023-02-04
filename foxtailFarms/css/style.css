@@ -10,7 +10,6 @@
 
 body {
     margin: 0;
-    position: absolute;
 }
 
 h2 {
@@ -58,35 +57,6 @@ a {
     text-decoration: none;
 }
 
-nav,
-nav a {
-  color: #3a164c;
-}
-
-footer a {
-  color: #ebf2f4
-}
-
-nav a:hover {
-  color: #9f9bc0;
-  text-decoration: underline;
-}
-
-footer a:hover {
-  color: #9f9bc0;
-  text-decoration: underline;
-}
-
-footer ul {
-  padding: 0;
-}
-
-.glider {
-  background-attachment: fixed;
-  background-image: url("../assets/images/abstractBackground.jpg");
-  background-size: cover;
-  height: 200px;
-}
 
 /****************************************************************************
   Grid styles
@@ -102,7 +72,7 @@ footer ul {
     "heroArea heroArea heroArea"
     ". contentArea ."
     "footerArea footerArea footerArea";
-  margin-bottom: 250px;
+  margin-bottom: 350px;
   position: relative;
   z-index: 2;
 }
@@ -158,10 +128,11 @@ nav {
 }
 
 footer {
+    align-items: center;
   bottom: 0;
-  background-color: #3a164c;
+  background-color: #000000;
   display: flex;
-  height: 250px;
+  height: 350px;
   justify-content: center;
   position: fixed;
   width: 100%;
@@ -178,27 +149,53 @@ footer {
 
 #followMe {
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
+  align-items: center;
 }
 
-.socialMedia {
-  padding-left: 50px;
+#foxtailFooterLogo {
+    width: 200px;
+}
+
+#footerLogo h1 {
+    font-size: 25px;
+    text-shadow: none;
 }
 
 .socialMedia i {
   font-size: 20px;
 }
 
-footer,
-footer a {
-  color: #ebf2f4;
-}
-
 nav a:hover,
 footer a:hover {
-  text-decoration: underline;
+    color: #e1a177;
+    text-decoration: underline;
 }
 
+nav,
+nav a {
+    color: #ffffff;
+}
+
+footer,
+footer a {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 20px;
+}
+
+.footerListHeader {
+    margin: 15px;
+}
+
+footer .container {
+    margin-left: 10px;
+    margin-right: 10px;
+}
 
 /****************************************************************************
   Hero styles
@@ -369,16 +366,13 @@ h1 {
 
 }
 
-/* @media screen and (max-width: 576px) {
+@media screen and (max-width: 576px) {
     
-    footer {
-        grid-area: footerArea;
-        position: static;
+    body {
+        position: absolute;
     }
 
     #siteGrid {
-        margin-bottom: 0;
-        position:absolute;
-        z-index: auto;
+        margin-bottom: 600px;
     }
-} */
+}
