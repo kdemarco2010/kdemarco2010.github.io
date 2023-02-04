@@ -1,3 +1,10 @@
+/* Google Font API imports - found at https://fonts.google.com/ */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;1,300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
 #hero {
     align-items: center;
     background-attachment: fixed;
@@ -13,16 +20,21 @@
 
 #hero h2 {
     color: #ffffff;
-    font-family: sans-serif;
-    font-size: 60px;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 30px;
     text-shadow: 2px 2px 10px #04182c;
 }
 
 #hero h3 {
     color: #ffffff;
-    font-family: sans-serif;
-    font-size: 48px;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 25px;
     text-shadow: 2px 2px 10px #04182c;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
 }
 
 .img-fluid {
@@ -32,15 +44,23 @@
     object-position: top left;
 }
 
-.btn {
+.card-body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container .btn {
     background-color: #044567;
     border-color: #04182c;
+    font-family: 'Poppins', sans-serif;
+    min-width: fit-content;
     transition: 0.5s;
+    width: calc(50vw/3);
 }
 
 .btn:hover {
     background-color: #04182c;
     border-color: #044567;
+    font-weight: 500;
     transform: scale(1.05);
 }
 
@@ -51,22 +71,25 @@
 
 h1 {
     color:#04182c;
-    font-family: sans-serif;
+    font-family: 'Abril Fatface', cursive;
     font-size: 42px;
-    margin: 15px;
+    font-weight: bold;
+    margin: 45px;
     text-align: center;
 }
 
-button {
-    margin: 20px 10px;
-    width: calc(100vw/4)
-}
-
-#mainButtons {
+.mainButtons {
     background-color: #5297ae;
+    border-color: #044567;
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    margin: 40px auto;
+    min-width: fit-content;
+    transition: 0.5s;
+    width: calc(100vw/2);
 }
 
-#mainButtons:hover {
+.mainButtons:hover {
     background-color: #044567;
 }
 
@@ -74,5 +97,32 @@ button {
     
     .img-fluid {
         height: 100%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .container .btn {
+        width: calc(75vw/2);
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .container .btn {
+        max-width: 287px;
+    }
+
+    .mainButtons {
+        width: calc(75vw/2);
+    }
+}
+
+@media screen and (min-width: 576px){
+    #hero h2 {
+        font-size: 60px;
+    }
+
+    #hero h3 {
+        font-size: 48px;
     }
 }
