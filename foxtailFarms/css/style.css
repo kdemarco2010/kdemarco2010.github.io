@@ -368,11 +368,7 @@ h1 {
 
 }
 
-<<<<<<< Updated upstream
-@media screen and (max-width: 576px) {
-=======
 /* @media screen and (max-width: 576px) {
->>>>>>> Stashed changes
     
     footer {
         grid-area: footerArea;
@@ -384,8 +380,4 @@ h1 {
         position:absolute;
         z-index: auto;
     }
-<<<<<<< Updated upstream
-}
-=======
 } */
->>>>>>> Stashed changes
