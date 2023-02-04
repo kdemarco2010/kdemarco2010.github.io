@@ -9,7 +9,7 @@
 }
 
 body {
-  margin: 0;
+    margin: 0;
 }
 
 h2 {
@@ -116,6 +116,7 @@ nav {
 
 #contentContainer {
   grid-area: contentArea;
+  padding: 0;
 }
 
 #marketContainer {
@@ -141,8 +142,6 @@ nav {
 .navbar-nav {
     font-size: 20px;
 }
-
-
 
 #foxtailNavLogo {
     height: 100px;
@@ -369,7 +368,11 @@ h1 {
 
 }
 
+<<<<<<< Updated upstream
 @media screen and (max-width: 576px) {
+=======
+/* @media screen and (max-width: 576px) {
+>>>>>>> Stashed changes
     
     footer {
         grid-area: footerArea;
@@ -381,4 +384,8 @@ h1 {
         position:absolute;
         z-index: auto;
     }
+<<<<<<< Updated upstream
 }
+=======
+} */
+>>>>>>> Stashed changes
