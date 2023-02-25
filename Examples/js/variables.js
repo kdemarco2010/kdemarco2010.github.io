@@ -38,3 +38,4 @@ console.log(anotherNumber);
 let username = "Kayla";
 let personalizedGreeting = greeting + " " + username;
 console.log(personalizedGreeting);
+
