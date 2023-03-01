@@ -32,6 +32,8 @@ body {
     color: white;
     background: #330e2c;
     display: inline-block;
+    width: calc(100vw / 6);
+    margin: 0px .25vh;
 }
 
 .label {
@@ -40,6 +42,7 @@ body {
     border-radius: 3px;
     background: #651b57;
     display: flex;
+    justify-content: center;
 }
 
 h2 {
@@ -73,7 +76,6 @@ h2 {
 
     .label {
         font-size: calc(19px + 0.390625vw);
-        padding: calc(5px + 1.5625vw);
        }
 }
 
@@ -81,5 +83,12 @@ h2 {
     .time {
         margin-top: 15px;
         width: 100px;
+    }
+}
+
+@media screen and (orientation:landscape) {
+    #hero {
+        width: 100%;
+        background-position: center center;
     }
 }
