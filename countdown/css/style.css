@@ -26,8 +26,8 @@ body {
 }
 
 .time {
-    font-size: 10vh;
-    padding: 15px;
+    font-size: calc(55px + 0.390625vw);
+    padding: calc(8px + 1.5625vw);
     border-radius: 3px;
     color: white;
     background: #330e2c;
@@ -35,8 +35,8 @@ body {
 }
 
 .label {
-    font-size: 5vh;
-    padding: 15px;
+    font-size: calc(20px + 0.390625vw);
+    padding: calc(8px + 1.5625vw);
     border-radius: 3px;
     background: #651b57;
     display: flex;
@@ -44,6 +44,42 @@ body {
 
 h2 {
     font-family: 'Love Ya Like A Sister', cursive;
-    font-size: 10vh;
+    font-size: calc(65px + 0.390625vw);
     text-align: center;
+    margin-top: 0;
+}
+
+@media only screen and (max-width: 992px) {
+    h2 {
+        font-size: calc(55px + 0.390625vw);
+    }
+    .time {
+        font-size: calc(45px + 0.390625vw);
+    }
+
+    .label {
+        font-size: calc(21px + 0.390625vw);
+       }
+}
+
+@media only screen and (max-width: 768px) {
+    h2 {
+        font-size: calc(45px + 0.390625vw);
+    }
+    .time {
+        font-size: calc(40px + 0.390625vw);
+        padding: calc(5px + 1.5625vw);
+    }
+
+    .label {
+        font-size: calc(19px + 0.390625vw);
+        padding: calc(5px + 1.5625vw);
+       }
+}
+
+@media only screen and (max-width: 484px) {
+    .time {
+        margin-top: 15px;
+        width: 100px;
+    }
 }
