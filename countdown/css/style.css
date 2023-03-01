@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap');@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap');
+
+body {
+    margin: 0;
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: thistle;
+    background-image: url("../assets/images/noLogoBackgroundSm.jpg");
+    background-position: 40% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#countdownClock {
+    display: inline-block;
+    font-family: 'Love Ya Like A Sister', cursive;
+    text-align: center;
+    max-height: 50vh;
+    
+}
+
+.time {
+    font-size: 10vh;
+    padding: 15px;
+    border-radius: 3px;
+    color: white;
+    background: #330e2c;
+    display: inline-block;
+}
+
+.label {
+    font-size: 5vh;
+    padding: 15px;
+    border-radius: 3px;
+    background: #651b57;
+    display: flex;
+}
+
+h2 {
+    font-family: 'Love Ya Like A Sister', cursive;
+    font-size: 10vh;
+    text-align: center;
+}
