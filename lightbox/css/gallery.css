@@ -5,7 +5,7 @@
 */
 #gallery {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     flex-wrap: wrap; 
     width: 800px; 
     max-width: 100%;
@@ -26,6 +26,14 @@
     object-fit: cover;
     opacity: 0.8;
     transition: opacity 0.25s, transform 0.25s;
+}
+
+.short {
+    width: calc(100% / 4);
+}
+
+.long {
+    width: calc(100% / 2);
 }
 
 /*
