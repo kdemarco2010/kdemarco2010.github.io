@@ -8,14 +8,22 @@ function openLightbox() {
     lightbox.src = this.src;
 }
 
-let coffeeImage = document.getElementById("coffeeImage");
-coffeeImage.onclick = openLightbox;
-let coffeeImage2 = document.getElementById("coffeeImage2");
-coffeeImage2.onclick = openLightbox;
-let coffeeImage3 = document.getElementById("coffeeImage3");
-coffeeImage3.onclick = openLightbox;
-let coffeeImage4 = document.getElementById("coffeeImage4");
-coffeeImage4.onclick = openLightbox;
+let callaLilly = document.getElementById("callaLilly");
+callaLilly.onclick = openLightbox;
+let waterLilly = document.getElementById("waterLilly");
+waterLilly.onclick = openLightbox;
+let waterLilly2 = document.getElementById("waterLilly2");
+waterLilly2.onclick = openLightbox;
+let bwFlower2 = document.getElementById("bwFlower2");
+bwFlower2.onclick = openLightbox;
+let bwFlower4 = document.getElementById("bwFlower4");
+bwFlower4.onclick = openLightbox;
+let bwBird = document.getElementById("bwBird");
+bwBird.onclick = openLightbox;
+let blueBird = document.getElementById("blueBird");
+blueBird.onclick = openLightbox;
+let bwTruck = document.getElementById("bwTruck");
+bwTruck.onclick = openLightbox;
 
 
 function closeLightbox() {
