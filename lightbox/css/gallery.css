@@ -28,14 +28,6 @@
     transition: opacity 0.25s, transform 0.25s;
 }
 
-.short {
-    width: calc(100% / 4);
-}
-
-.long {
-    width: calc(100% / 2);
-}
-
 /*
   On hover, make the image completely opaque, change the cursor to a pointer,
   and increase the size of the image slightly.
