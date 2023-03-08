@@ -95,14 +95,12 @@ body {
     padding-top: 25px;
 }
 
-.container {
-    display: flex;
-    margin: 0;
-    max-width: 100%;
+.navbar {
+    margin: 0 56px;
 }
 
-.logoContainer {
-    justify-content: flex-start;
+.navbar > .container-fluid {
+    flex-wrap: nowrap !important;
 }
 
 #netflixLogo {
@@ -126,6 +124,7 @@ body {
 
 .languageMenu {
     max-width: 100px;
+    margin-right: calc(20px + 1.5625vw);
 }
   
 .languageMenu .languageBtn {
@@ -139,7 +138,6 @@ body {
     border-radius: 2px;
     align-items: center;
     cursor: pointer;
-    justify-content: space-between;
 }
 
 .languageMenu .options {
@@ -194,4 +192,75 @@ body {
 
 .reveal {
     visibility: visible;
+}
+
+.homeText {
+    margin: 0 auto;
+    max-width: 950px;
+    padding: 75px 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.title {
+    font-size: calc(50px + 0.390625vw);
+    color: white;
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.subtitle {
+    font-family: 'NetflixSans-Light', Helvetica, sans-serif;
+    font-size: calc(26px + 0.390625vw);
+    color: white;
+    margin: 16px auto;
+    max-width: 640px;
+}
+
+.emailTitle {
+    font-family: 'NetflixSans-Light', Helvetica, sans-serif;
+    font-size: calc(19px + 0.390625vw);
+    color: white;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.emailTextField {
+    border: 1px solid #8c8c8c;
+    border-radius: 2px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    box-sizing: border-box;
+    color: black;
+    font-size: 16px;
+    height: 60px;
+    min-width: 450px;
+}
+
+@media only screen and (min-width: 550px) and (max-width: 949px) {
+    .navbar {
+        margin: 0 45px;
+    }
+}
+
+@media only screen and (max-width: 549px) {
+    #netflixLogo {
+        height: 36px;
+    }
+
+    .languageMenu .languageBtn {
+        height: 30px;
+    }
+
+    .navbar {
+        margin: 0 5%;
+    }
+
+    .signIn {
+        padding: 4px 8px;
+    }
 }
