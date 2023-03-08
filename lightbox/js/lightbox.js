@@ -85,3 +85,10 @@ options.addEventListener("click", function(e){
     }
 });
 
+// body.addEventListener("click", function(e){
+//     if (options.classList.contains("reveal")){
+//         toggleDropdown();
+//     }
+// });
+
+
