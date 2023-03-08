@@ -120,7 +120,7 @@ body {
     padding: 7px 17px;
 }
 
-/* dropdown menu */
+/* -------dropdown menu-------- */
 
 .languageMenu {
     max-width: 100px;
@@ -186,13 +186,15 @@ body {
   
 .languageMenu.active .options {
     display: block;
-    opacity: 0;
+    visibility: hidden;
     z-index: 10;
 }
 
 .reveal {
     visibility: visible;
 }
+
+/* ------Netflix centered text------ */
 
 .homeText {
     margin: 0 auto;

@@ -55,28 +55,30 @@ const languageMenu = document.querySelector(".languageMenu"),
     languageBtn = languageMenu.querySelector(".languageBtn"),
     language = languageMenu.querySelectorAll(".language"),
     btnText = languageMenu.querySelector(".btnText"),
-    options = languageMenu.querySelector("options"),
-    optionText = languageMenu.querySelector("optionText"),
-    chevronArrow = languageMenu.querySelector("chevronArrow");
+    options = languageMenu.querySelector(".options"),
+    optionText = languageMenu.querySelector(".optionText"),
+    chevronArrow = languageMenu.querySelector(".chevronArrow");
 
 function toggleDropdown() {
     options.classList.toggle("reveal");
     chevronArrow.classList.toggle("arrowFlip");
 }
 
+
 languageBtn.addEventListener("click", function(e) {
     toggleDropdown();
 });
 
-// languageBtn.addEventListener("click", function () {
-//     languageMenu.classList.toggle("active")
-// });
+languageBtn.addEventListener("click", function () {
+    languageMenu.classList.toggle("reveal")
+});
 
 language.forEach(function (option) { {
     option.addEventListener("click", function () { {
     let selectedOption = option.querySelector(".optionText").innerText;
     btnText.innerText = selectedOption;
 
-    languageMenu.classList.remove("active");
+
+    // languageMenu.classList.remove("active");
     }});
 }});
