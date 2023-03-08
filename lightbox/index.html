@@ -15,7 +15,7 @@
             integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
             crossorigin="anonymous">
     </head>
-    <body>
+    <body id="body">
         <div id="netflixHome">
             <div id="banner">
                 <div id="new">NEW!</div>
@@ -70,7 +70,7 @@
                                         <span class="optionText">English</span>
                                     </li>
                                     <li class="language">
-                                        <span class="optionText">Spanish</span>
+                                        <span class="optionText" lang="es">Español</span>
                                     </li>
                                 </ul>
                             </div>
@@ -85,20 +85,20 @@
                 <div class="emailSubmission">
                     <h3 class="emailTitle">Ready to watch? Enter your email to create or restart your membership.</h3>
                     <div class="emailInput">
-                        <imput 
-                            type="email" 
+                        <input 
+                            type="email"
+                            id="emailField" 
                             name="email" 
                             class="emailTextField"
                             maxlength="50"
                             minlength="5"
                             placeholder="Email address">
-                            Email Address
-                        </imput>
+                        </input>
                         <button class="getStarted" type="submit">
                             Get Started
-                            <img alt="next" id="chevron" 
-                            src="images/chevronWhite.png">
-                        </button>
+                            <img alt="next" id="chevronWhite" 
+                            src="images/chevronWhite.png">    
+                        </button>        
                     </div>
                 </div>
             </div>

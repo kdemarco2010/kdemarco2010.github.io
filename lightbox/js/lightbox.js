@@ -56,8 +56,9 @@ const languageMenu = document.querySelector(".languageMenu"),
     language = languageMenu.querySelectorAll(".language"),
     btnText = languageMenu.querySelector(".btnText"),
     options = languageMenu.querySelector(".options"),
-    optionText = languageMenu.querySelector(".optionText"),
-    chevronArrow = languageMenu.querySelector(".chevronArrow");
+    optionText = document.getElementById(".optionText"),
+    chevronArrow = languageMenu.querySelector(".chevronArrow"),
+    body = document.getElementById("body");
 
 function toggleDropdown() {
     options.classList.toggle("reveal");
@@ -69,16 +70,18 @@ languageBtn.addEventListener("click", function(e) {
     toggleDropdown();
 });
 
-languageBtn.addEventListener("click", function () {
-    languageMenu.classList.toggle("reveal")
-});
 
 language.forEach(function (option) { {
     option.addEventListener("click", function () { {
     let selectedOption = option.querySelector(".optionText").innerText;
     btnText.innerText = selectedOption;
 
-
-    // languageMenu.classList.remove("active");
     }});
 }});
+
+options.addEventListener("click", function(e){
+    if (options.classList.contains("reveal")){
+        toggleDropdown();
+    }
+});
+
