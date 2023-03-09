@@ -58,10 +58,7 @@ const languageMenu = document.querySelector(".languageMenu"),
     options = languageMenu.querySelector(".options"),
     optionText = document.getElementById("optionText"),
     chevronArrow = languageMenu.querySelector(".chevronArrow"),
-    body = document.getElementById("body"),
-    english = languageMenu.querySelector("#english"),
-    spanish = languageMenu.querySelector("#spanish"),
-    check = languageMenu.querySelector(".material-symbols-outlined");
+    body = document.getElementById("body");
 
 function toggleDropdown() {
     options.classList.toggle("reveal");
