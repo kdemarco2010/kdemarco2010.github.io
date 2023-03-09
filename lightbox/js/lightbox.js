@@ -65,9 +65,15 @@ function toggleDropdown() {
     chevronArrow.classList.toggle("arrowFlip");
 }
 
+function closeDropdown() {
+    options.classList.remove("reveal");
+    chevronArrow.classList.remove("arrowFlip");
+}
 
 languageBtn.addEventListener("click", function(e) {
     toggleDropdown();
+
+    e.stopPropagation();
 });
 
 
@@ -87,9 +93,7 @@ options.addEventListener("click", function(e){
 
 body.addEventListener("click", function(e){
     if (options.classList.contains("reveal")){
-        // toggleDropdown();
-        options.classList.remove("reveal");
-        chevronArrow.classList.remove("arrowFlip");
+        closeDropdown();
     }
 });
 
