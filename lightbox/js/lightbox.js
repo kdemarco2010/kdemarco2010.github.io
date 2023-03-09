@@ -95,30 +95,3 @@ options.addEventListener("click", function(e){
         toggleDropdown();
     }
 });
-
-english.addEventListener("click", function() {
-    change(english, spanish);
-}, false);
-
-spanish.addEventListener("click", function() {
-    change(spanish, english);
-}, false);
-
-function change(langOn, langOff) {
-    if (!langOn.classList.contains("currentLang")) {
-        langOn.classList.add("currentLang");
-        langOff.classList.remove("currentLang");
-    }
-}
-
-if(langOn.innerHTML == "English") {
-    translate.classList.add("english");
-    translate.classList.remove("spanish");
-    translate.innerHTML = "Unlimited movies, TV shows, and more.";
-} else 
-
-if (langOn.innerHTML == "Español") {
-    translate.classList.add("spanish");
-    translate.classList.remove("english");
-    translate.innerHTML = "Pelîculas y series ilimitadas y mucho màs";
-}
