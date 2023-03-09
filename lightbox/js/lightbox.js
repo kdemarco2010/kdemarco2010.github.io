@@ -56,9 +56,12 @@ const languageMenu = document.querySelector(".languageMenu"),
     language = languageMenu.querySelectorAll(".language"),
     btnText = languageMenu.querySelector(".btnText"),
     options = languageMenu.querySelector(".options"),
-    optionText = document.getElementById(".optionText"),
+    optionText = document.getElementById("optionText"),
     chevronArrow = languageMenu.querySelector(".chevronArrow"),
-    body = document.getElementById("body");
+    body = document.getElementById("body"),
+    english = languageMenu.querySelector("#english"),
+    spanish = languageMenu.querySelector("#spanish"),
+    check = languageMenu.querySelector(".material-symbols-outlined");
 
 function toggleDropdown() {
     options.classList.toggle("reveal");
@@ -85,10 +88,12 @@ options.addEventListener("click", function(e){
     }
 });
 
-// body.addEventListener("click", function(e){
-//     if (options.classList.contains("reveal")){
-//         toggleDropdown();
-//     }
-// });
+body.addEventListener("click", function(e){
+    if (options.classList.contains("reveal")){
+        // toggleDropdown();
+        options.classList.remove("reveal");
+        chevronArrow.classList.remove("arrowFlip");
+    }
+});
 
 
