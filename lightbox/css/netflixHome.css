@@ -98,8 +98,7 @@ h3 {
     color: #0e7ff9;
 }
 
-#chevron,
-#chevronWhite {
+#chevron {
     height: 18px;
     padding-left: 8.5px;
 }
@@ -278,48 +277,59 @@ h3 {
     align-items: center;
     justify-content: center;
     display: flex;
-    margin: 0 auto;
+    margin: 5px 0 auto;
     padding: 0;
-    max-width: 950px;
+    width: 100%;
 }
 
 .emailSubmission {
     display: flex;
     flex-direction: column;
+    max-width: 586px;
 }
 
 .emailTextField {
     appearance: none;
     align-items: center;
-    border: 1px solid #8c8c8c;
-    border-radius: 2px;
-    border-bottom-right-radius: 0;
-    border-top-right-radius: 0;
+    background: rgba(22, 22, 22, 0.7);
+    border: 1px solid rgba(128, 128, 128, 0.7);
+    border-radius: 4px;
     box-sizing: border-box;
     color: black;
     font-size: 16px;
     height: 60px;
-    padding-left: 10px;
+    line-height: 24px;
+    padding-left: 8px;
     margin: 0;
-    width: 450px;
+    min-height: 16px;
+    width: 376px;
+}
+
+input::placeholder {
+    color: white;
 }
 
 .getStarted {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-height: 60px;
+    height: 60px;
+    width: 232px;
     border: none;
     border-left: 1px solid #333;
-    border-radius: 2px;
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 0;
+    border-radius: 4px;
     background-color: #e50914;
     color: white;
-    font-family: 'NetflixSans-Light', Helvetica, sans-serif;
-    font-size: 26px;
-    padding: 0 26px;
-    margin: 0;
+    font-family: 'NetflixSans-Medium', Helvetica, sans-serif;
+    font-size: 24px;
+    padding: 12px 20px;
+    margin-top: 0;
+    margin-left: 8px;
+}
+
+#chevronWhite {
+    height: 18px;
+    padding-left: 8px;
 }
 
 /* ---------Footer---------- */
@@ -393,7 +403,7 @@ footer {
         width: 500px;
     }
 
-    .emailInput {
+    /* .emailInput {
         flex-direction: column;
     }
 
@@ -405,7 +415,7 @@ footer {
 
     #chevronWhite {
         height: 16px;
-    }
+    } */
 }
 
 @media only screen and (max-width: 549px) {

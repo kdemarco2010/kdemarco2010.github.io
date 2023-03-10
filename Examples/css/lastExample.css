@@ -1,0 +1,157 @@
+/* SETUP -----------------------------------------------*/
+
+#flexbox1,
+#flexbox2,
+#flexbox3,
+#grid {
+    border: 3px dashed green;
+    margin: 12px;
+    padding: 36px;
+}
+
+#flexbox1,
+#flexbox2,
+#flexbox3 {
+    display: flex;
+}
+
+.box {
+    border: 2px solid black;
+    margin: 12px;
+    min-height: 100px;
+    min-width: 100px;
+}
+
+.green {
+    background-color: forestgreen;
+}
+
+.red {
+    background-color: crimson;
+}
+
+.blue {
+    background-color: blue;
+}
+
+/* Flexbox 1 Section ------------------------------------------*/
+
+#flexbox1.center {
+    justify-content: center;
+}
+
+#flexbox1.left {
+    justify-content: flex-start;
+}
+
+#flexbox1.right {
+    justify-content: flex-end;
+}
+
+#flexbox1.spread {
+    justify-content: space-between;
+}
+
+#flexbox1.spreadRestricted {
+    justify-content: space-between;
+    max-width: 600px;                                                                                                                                         
+    margin: 0 auto;
+}
+
+#flexbox1.leftLogo #logo {
+    margin-right: auto;
+}
+
+#flexbox1 li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Flexbox 2 Section ------------------------------------------*/
+
+#flexbox2 {
+    min-height: 500px;
+}
+
+#flexbox2.topLeft {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#flexbox2.bottomRight {
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#flexbox2.center {
+    justify-content: center;
+    align-items: center;
+}
+
+#flexbox2.topRight {
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+#flexbox2.bottomLeft {
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+#flexbox2.column {
+    flex-direction: column;
+}
+
+#flexbox2 {
+    background-color: darkslategrey;
+}
+
+/* Flexbox 3 Section ------------------------------------------*/
+
+#flexbox3 {
+    flex-wrap: wrap;
+}
+
+#flexbox3.narrow {
+    padding: 200px;
+}
+
+#flexbox3.threeColumns .box {
+    /* required for sizing calculations */
+    box-sizing: border-box;
+
+    width: calc(33.33% - 12px*2);
+}
+
+#flexbox3.fillSpace .box {
+    flex: 1;
+}
+
+#flexbox3 img {
+    width: 100%;
+}
+
+/* -----------Grid Section ------------------------------------------*/
+
+#grid {
+    border: 3px dotted purple;
+    display: grid;
+}
+
+#grid img {
+    width: 100%;
+}
+
+#grid.twoColumn {
+    grid-template-columns: 1fr 1fr;
+}
+
+#grid.threeColumn {
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns :repeat(3, 1fr)
+}
