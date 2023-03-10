@@ -403,19 +403,17 @@ footer {
         width: 500px;
     }
 
-    /* .emailInput {
-        flex-direction: column;
+}
+
+@media only screen and (max-width: 750px) {
+    .emailTextField {
+        width: 75%;
     }
 
     .getStarted {
         min-height: 40px;
-        font-size: 16px;
-        margin-top: 15px;
+        font-size: 20px;
     }
-
-    #chevronWhite {
-        height: 16px;
-    } */
 }
 
 @media only screen and (max-width: 549px) {
@@ -433,5 +431,21 @@ footer {
 
     .signIn {
         padding: 4px 8px;
+    }
+
+    .emailInput {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .getStarted {
+        min-height: 40px;
+        width: 153px;
+        font-size: 16px;
+        margin-top: 15px;
+    }
+
+    #chevronWhite {
+        height: 16px;
     }
 }
