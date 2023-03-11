@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Final Eval - Disney+</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script 
+            src="https://kit.fontawesome.com/605ccdaed2.js" 
+            crossorigin="anonymous">
+        </script>
+        <link 
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+            rel="stylesheet" 
+            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
+            crossorigin="anonymous">
+    </head>
+    <body id="body">
+        <!-- ------------------------Navbar------------------------ -->
+        <nav id="navbarSticky">
+            <div id="navButtons">
+                <button id="logIn">LOG IN</button>
+            </div>
+        </nav>
+        <nav id="navbar">
+            <div id="navLogo">
+                <img alt="Disney+ Logo" src="assets/images/disneyPlusLogo.svg">
+            </div>
+            <div id="navButtons">
+                <button id="signUp">SIGN UP NOW</button>
+                <button id="logIn">LOG IN</button>
+            </div>
+        </nav>
+        
+        <!-- ---------------------------Hero-------------------------- -->
+        <div id="hero">
+            <div id="heroLogos">
+                <img alt="Hulu Disney+ ESPN" id="logoImagesHero" src="assets/images/huluDisneyESPN.png">
+            </div>
+            <div id="emailSection">
+                <h3 id="emailTitle">
+                    Enter your email to create or restart your subscription.
+                </h3>
+                <form 
+                    action="" 
+                    method="get" 
+                    id="emailSubmission">
+                </form>
+                <label id="emailInput">Email</label>
+                <input 
+                    type="email"
+                    name="email"
+                    placeholder="Email">
+                <button type="submit" name="getBundle" id="emailSubmit">GET THE DISNEY BUNDLE</button>
+            </div>
+            <div id="channels">
+                <h4 id="channelsHeading">
+                    All of these and more now streaming.
+                    <!-- Button trigger modal -->
+                    <button type="button" 
+                        class="btn" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#exampleModal">
+                        Terms Apply.
+                    </button>
+  
+                    <!-- Modal -->
+                    <div 
+                        class="modal fade" 
+                        id="exampleModal" 
+                        tabindex="-1" 
+                        aria-labelledby="exampleModalLabel" 
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button 
+                                        type="button" 
+                                        class="btn-close" 
+                                        data-bs-dismiss="modal" 
+                                        aria-label="Close">
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div id="termsText">
+                                        U.S. residents, 18+ only. Access content from each 
+                                        service separately. Location data required to watch
+                                        certain content. offer valid for eligible subscribers
+                                        only. Subject to 
+                                        <a href="https://www.disneyplus.com/legal/subscriber-agreement">
+                                            Disney+ and ESPN+ Subscriber Agreement.
+                                        </a>
+                                        For detailed information on billing and cancelation,
+                                        please visit the
+                                        <a href="https://help.disneyplus.com/csp?id=csp_article_content&article=disney-bundle">
+                                            Disney+ Help Center. 
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </h4>
+                <div id="heroChannelLogos">
+                    <img alt="Disney+ Channels" id="channelLogos" src="assets/images/disneyAndMore.png">
+                </div>
+            </div>
+            <div id="optionsLink">
+                <a href="https://www.disneyplus.com/?cid=DSS-Search-Google-71700000070655584-&s_kwcid=AL%218468%213%21610598193342%21e%21%21g%21%21disney%2B&gclid=EAIaIQobChMI0dKoqvv7-wIVIueGCh1AdwsTEAAYASAAEgIFjPD_BwE&gclsrc=aw.ds#ariel-cards">
+                    View All Plan Options
+                </a>
+            </div>
+        </div>
+        <!-- -------------------------Tabs------------------------ -->
+        <div id="multiTab">
+            <section id="tabsNav">
+                <ul id="tabs">
+                    <li>
+                        <a href="#" id="trendingLink">TRENDING</a>
+                    </li>
+                    <li>
+                        <a href="#" id="newOnDisneyLink">NEW ON DISNEY+</a>
+                    </li>
+                    <li>
+                        <a href="#" id="comingSoonLink">COMING SOON</a>
+                    </li>
+                </ul>
+            </section>
+            <div id="trending">
+                <img 
+                    alt="Wakanda Forever" 
+                    class="trendingImages tabImg" 
+                    src="assets/images/wakandaForever.jpg">
+                <img    
+                    alt="Andor"
+                    class="trendingImages tabImg"
+                    src="assets/images/andor.jpg">
+                <img
+                    alt="Turning Red"
+                    class="trendingImages tabImg"
+                    src="assets/images/turningRed.jpg">
+                <img    
+                    alt="Fire Of Love"
+                    class="trendingImages tabImg"
+                    src="assets/images/fireOfLove.jpg">
+                <img
+                    alt="Encanto"
+                    class="trendingImages tabImg"
+                    src="assets/images/encanto.jpg">
+                <img 
+                    alt="Zootopia"
+                    class="trendingImages tabImg"
+                    src="assets/images/zootopiaPlus.jpg">
+            </div>
+            <div id="newOnDisney">
+                <img 
+                    alt="Moon Girl" 
+                    class="trendingImages tabImg" 
+                    src="assets/images/moonGirl.jpeg">
+                <img    
+                    alt="Star Wars The Bad Batch"
+                    class="trendingImages tabImg"
+                    src="assets/images/badBatch.jpeg">
+                <img
+                    alt="Willow Behind the Magic"
+                    class="trendingImages tabImg"
+                    src="assets/images/willow.jpeg">
+                <img    
+                    alt="The Proud Family"
+                    class="trendingImages tabImg"
+                    src="assets/images/proudFamily.jpeg">
+                <img
+                    alt="Star Wars The Mandalorian"
+                    class="trendingImages tabImg"
+                    src="assets/images/mandalorian.jpeg">
+                <img 
+                    alt="Voices Rising The Music Of Wakanda Forever"
+                    class="trendingImages tabImg"
+                    src="assets/images/voicesRising.jpeg">
+            </div>
+            <div id="comingSoon">
+                <img 
+                    alt="American Born Chinese" 
+                    class="trendingImages tabImg" 
+                    src="assets/images/americanBorn.jpeg">
+                <img    
+                    alt="Chang Can Dunk"
+                    class="trendingImages tabImg"
+                    src="assets/images/changCanDunk.jpeg">
+                <img
+                    alt="Peter Pan & Wendy"
+                    class="trendingImages tabImg"
+                    src="assets/images/peterPan.jpeg">
+                <img    
+                    alt="Turning The Tables With Robin Roberts"
+                    class="trendingImages tabImg"
+                    src="assets/images/robinRoberts.jpeg">
+                <img
+                    alt="Bono & The Edge A Sort Of Homecoming"
+                    class="trendingImages tabImg"
+                    src="assets/images/homecoming.jpeg">
+                <img 
+                    alt="The Muppets Mayhem"
+                    class="trendingImages tabImg"
+                    src="assets/images/mayhem.jpeg">
+            </div>
+        </div>
+        <!-- ------------------------Footer----------------------- -->
+        <footer id="footer">
+            <img 
+                alt="Disney+ Logo"
+                id="disneyFooterLogo"
+                src="assets/images/disneyPlusLogo.svg"> 
+            <ul id="footerLinks">
+                <li>
+                    <a href="#">Subscriber Agreement</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Your California Privacy Rights</a>
+                    <a href="#">Do Not Sell My Personal Information</a>
+                    <a href="#">Children's Online Privacy Policy</a>
+                    <a href="#">Closed Captioning</a>
+                    <a href="#">Interest-Based Ads</a>
+                    <a href="#">Supported Devices</a>
+                    <a href="#">Help</a>
+                    <a href="#">Gift Disney+</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Disney+ Partner Program</a>
+                    <a href="#">Disney Bundle</a>
+                </li>
+                <div id="footerText">
+                    Content and platform availability may vary by region.
+                </div>
+                <div id="copyright">
+                    <i class="fa-regular fa-copyright"></i>
+                    Disney. All Rights Reserved.
+                </div>
+            </ul>
+        </footer>
+        <!--Bootstrap-->
+        <script 
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" 
+            crossorigin="anonymous">
+        </script>
+        <!-- Lightbox JavaScript -->
+        <script src="js/finalEval.js"></script>
+    </body>
+</html>

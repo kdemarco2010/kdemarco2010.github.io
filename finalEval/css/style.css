@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap');
+
+#body {
+    background-color: black;
+    font-family: 'Sen', sans-serif;
+    color: white;
+}
+
+a {
+    font-family: 'Sen', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* -----------------Navbar------------------------ */
+
+#navbar {
+    align-items: center;
+    background-color: black;
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    left: 0;
+    padding: 0 35px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 4;
+}
+
+#navbarSticky {
+    background: transparent;
+    display: flex;
+    justify-content: flex-end;
+    left: 0;
+    right: 0;
+    padding: 10px 35px;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+#navLogo {
+    margin: 13px 0 5px 5px;
+    padding: 0 14px;
+    width: 110px;
+}
+
+#signUp {
+    background-color: #0063e5;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 18px;
+    height: 50px;
+    letter-spacing: 1px;
+    margin: 5px;
+    padding: 8px 14px;
+}
+
+#logIn {
+    background-color: black;
+    border: 1px solid silver;
+    border-radius: 4px;
+    color: white;
+    height: 50px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 8px 14px;
+}
+
+/* --------------------Hero-------------------------- */
+
+#hero {
+    align-items: center;
+    background-size: cover;
+    background-image: url("../assets/images/backgroundLarge.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 75vh;
+    width: 100vw;
+    padding: 5.6vh;
+    position: relative;
+}
+
+#logoImagesHero {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+h3 {
+    font-size: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#channelLogos {
+    margin: 0 auto;
+    width: 50%;
+}
+
+/* ----------------Modal-------------------- */
+.modal-header {
+    border-bottom: none !important;
+}
+
+.btn:focus,
+.btn:hover,
+.btn:active {
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+
+.btn {
+    color: white !important;
+    text-decoration: underline !important;
+    font-family: 'Sen', sans-serif !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* --------------------Tabs---------------------------- */
+
+.tabImg {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+/* --------------------Footer---------------------------- */
+/* ----------------------Media Query------------------------- */
+
+@media only screen and (max-width: 768px) {
+    
+    #navbar {
+        padding: 0 12px 0 20px;
+    }
+    
+    #navLogo {
+        width: 90px;
+        padding: 0 12px;
+    }
+
+    #signUp,
+    #logIn {
+        height: 40px;
+        font-size: 15px;
+    }
+}
