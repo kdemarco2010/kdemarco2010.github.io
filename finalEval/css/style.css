@@ -86,6 +86,10 @@ a {
     position: relative;
 }
 
+#heroLogos {
+    display: flex;
+}
+
 #logoImagesHero {
     max-width: 600px;
     margin: 0 auto;
@@ -113,6 +117,7 @@ a {
     flex-direction: row;
     justify-content: center;
     margin: 0 auto;
+    padding-bottom: 25px;
     width: 100%;
 }
 
@@ -198,7 +203,28 @@ input {
         font-size: 15px;
     }
 
+    #logoImagesHero {
+        max-width: none;
+        width: calc(350px + 1.5vw);
+    }
+
     #emailTitle {
         font-size: 14px;
+    }
+
+    #emailSubmission {
+        flex-direction: column;
+    }
+
+    input {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    #emailSubmit {
+        height: auto;
+        max-width: 165px;
     }
 }
