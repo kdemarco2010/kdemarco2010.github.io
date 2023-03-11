@@ -20,6 +20,41 @@ window.addEventListener("scroll", function() {
     }
 })
 
+// -----MultiTab-----
+
+const trending = document.getElementById("trending");
+const newOnDisney = document.getElementById("newOnDisney");
+const comingSoon = document.getElementById("comingSoon");
+const trendingLink = document.getElementById("trendingLink");
+const newOnDisneyLink = 
+    document.getElementById("newOnDisneyLink");
+const comingSoonLink = document.getElementById("comingSoonLink");
+
+function hideAll() {
+    trending.style.display = "none";
+    newOnDisney.style.display = "none";
+    comingSoon.style.display = "none";
+}
+hideAll();
+
+function showTrendingTab() {
+    hideAll();
+    trending.style.display = "";
+}
+trendingLink.onclick = showTrendingTab;
+
+function showNewTab() {
+    hideAll();
+    newOnDisney.style.display = "";
+}
+newOnDisneyLink.onclick = showNewTab;
+
+function showComingTab() {
+    hideAll();
+    comingSoon.style.display = "";
+}
+comingSoonLink.onclick = showComingTab;
+
 // -----language button-----
 
 const languageMenu = document.querySelector(".languageMenu"),

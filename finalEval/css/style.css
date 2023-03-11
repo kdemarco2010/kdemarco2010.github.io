@@ -277,6 +277,12 @@ input {
     object-fit: cover;
     grid-gap: 24px;
 }
+
+#trendingLink:active,
+#newOnDisney:active,
+#comingSoon:active {
+    border-bottom: 5px solid #f9f9f9;
+}
 /* --------------------Footer---------------------------- */
 
 #footer {
