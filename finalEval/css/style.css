@@ -94,7 +94,7 @@ li a {
 }
 
 #logoImagesHero {
-    max-width: 600px;
+    max-width: 75%;
     margin: 0 auto;
     padding-bottom: 20px;
 }
@@ -152,11 +152,6 @@ input {
     padding: 5px 15px;
 }
 
-#channelLogos {
-    margin: 0 auto;
-    width: 50%;
-}
-
 #channels {
     align-items: center;
     display: flex;
@@ -168,6 +163,24 @@ input {
 #channelsHeading {
     align-items: baseline;
     display: flex;
+    font-size: 16px;
+}
+
+#heroChannelLogos {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px 0 80px;
+}
+
+#channelLogos {
+    margin: 0 auto;
+    width: 70%;
+}
+
+#optionsLink a {
+    color: white;
     font-size: 16px;
 }
 
@@ -249,11 +262,16 @@ input {
 
     #logoImagesHero {
         max-width: none;
-        width: calc(350px + 1.5vw);
+        width: 100%;
+    }
+
+    #hero {
+        padding: 20vw 5vw 20vw;
     }
 
     #emailTitle,
-    #channelsHeading {
+    #channelsHeading,
+    #optionsLink a {
         font-size: 14px;
     }
 
@@ -275,6 +293,10 @@ input {
 
     .modal {
         font-size: 16px;
+    }
+
+    #channelLogos {
+        width: 100%;
     }
 }
 
