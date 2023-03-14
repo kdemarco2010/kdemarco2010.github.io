@@ -34,16 +34,22 @@ const comingSoonLink = document.getElementById("comingSoonLink");
 function trendingTabSelected() {
     newOnDisney.style.display = "none";
     comingSoon.style.display = "none";
+    newOnDisneyLink.classList.remove("active");
+    comingSoonLink.classList.remove("active");
 }
 
 function newTabSelected() {
     trending.style.display = "none";
     comingSoon.style.display = "none";
+    trendingLink.classList.remove("active");
+    comingSoonLink.classList.remove("active");
 }
 
 function comingTabSelected() {
     trending.style.display = "none";
     newOnDisney.style.display = "none";
+    newOnDisneyLink.classList.remove("active");
+    trendingLink.classList.remove("active");
 }
 
 trendingTabSelected();
@@ -51,18 +57,22 @@ trendingTabSelected();
 function showTrendingTab() {
     trendingTabSelected();
     trending.style.display = "";
+    trendingLink.classList.add("active");
+
 }
 trendingLink.onclick = showTrendingTab;
 
 function showNewTab() {
     newTabSelected();
     newOnDisney.style.display = "";
+    newOnDisneyLink.classList.add("active");
 }
 newOnDisneyLink.onclick = showNewTab;
 
 function showComingTab() {
     comingTabSelected();
     comingSoon.style.display = "";
+    comingSoonLink.classList.add("active");
 }
 comingSoonLink.onclick = showComingTab;
 

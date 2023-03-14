@@ -61,7 +61,7 @@ li a {
 
 #signUp {
     background-color: #0063e5;
-    border: none;
+    border: 1px solid #0063e5;
     border-radius: 4px;
     color: white;
     font-size: 18px;
@@ -265,7 +265,7 @@ input {
 
 #tabs li a {
     cursor: pointer;
-    text-decoration: underline 5px solid transparent;
+    padding-bottom: 5px;
 }
 
 #trending,
@@ -274,6 +274,7 @@ input {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 24px;
+    margin: 18px 0;
 }
 
 .tabImg {
@@ -283,9 +284,8 @@ input {
     grid-gap: 24px;
 }
 
-#tabs li a:focus,
-#tabs li a:active {
-    text-decoration: underline 5px solid #f9f9f9;
+li a.active {
+    border-bottom: 5px solid white;
 }
 /* --------------------Footer---------------------------- */
 
