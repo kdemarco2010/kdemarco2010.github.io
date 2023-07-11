@@ -1,3 +1,4 @@
+// ---------- LIGHTBOX ---------- //
 
 let lightboxContainer = document.getElementById("lightboxContainer");
 let lightboxBackground = document.getElementById("lightboxBackground");
@@ -39,9 +40,9 @@ for (let i = 0; i < closers.length; i++) {
 
 // ------------ GALLERIES ----------------- //
 
-const client1Gallery = document.getElementById("client1Gallery");
-const client2Gallery = document.getElementById("client2Gallery");
-const client3Gallery = document.getElementById("client3Gallery");
+var client1Gallery = document.getElementById("client1Gallery");
+var client2Gallery = document.getElementById("client2Gallery");
+var client3Gallery = document.getElementById("client3Gallery");
 const client1 = document.getElementById("client1");
 const client2 = document.getElementById("client2");
 const client3 = document.getElementById("client3");
