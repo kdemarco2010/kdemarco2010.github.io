@@ -12,26 +12,18 @@
                 box-sizing: border-box;
             }
 
-            table{
-                width: 400px;
-                height: 220px;
+            #table{
                 border: 3px solid;
                 border-image: linear-gradient(to right, #ff0bac, #02f2f7) 1;
             }
 
-            #mainSection{
-                margin-bottom: -20px;
-                margin-top: -20px;
-            }
-
-            #logoSection{
+            /* #logoSection{
                 width: 30%;
 
-            }
+            } */
 
             #logo{
-                display: block;
-                margin: -50px -15px -50px -5px;
+                margin: -50px -15px -50px -10px;
                 width: 150px;
             }
 
@@ -43,11 +35,7 @@
             #title{
                 border-bottom: 1px solid;
                 border-image: linear-gradient(to right, #ff0bac, #02f2f7) 0 0 1 0;
-                padding-bottom: 7px;
-            }
-
-            .contactIcons{
-                margin-left: -15px;
+                padding-bottom: 5px;
             }
 
             #name{
@@ -75,24 +63,11 @@
 
             .contactIcons img{
                 width: 50px;
+                margin: -20px 0 -20px -20px;
             }
 
-            #phone,
-            #number,
-            #email,
-            #emailAddress,
-            .socialIcons{
-                display: inline-block;
-                vertical-align: middle;
-            }
-
-            #emailSection{
-                margin-top: -10px;
-            }
-
-            #socialIconContainer{
-                display: block;
-                text-align: center;
+            #socialsSection{
+                margin: auto;
             }
 
             .socialIcons{
@@ -102,51 +77,91 @@
         </style>
     </head>
     <body>
-            <table id="subContainer">
+        <table id="table">
+            <tbody>
                 <tr id="mainSection">
                     <td id="logoSection">
                         <img id="logo" src="https://drive.google.com/uc?id=17tGIy5UGG1VldEwCicWDWr0gbQ3wbnG4" alt="Created By Kayla D Logo">
                     </td>
                     <td id="infoSection">
-                        <div id="name">Kayla DeMarco</div>
-                        <div id="title">
-                            Graphic Designer | Created.By.KaylaD
-                        </div>
-                        <a href="tel:3863163286">
-                            <div class="contactIcons" id="phoneSection">
-                                <img id="phone" src="https://drive.google.com/uc?id=1tG-xp2CiOq_ggrKGrX2SZmB52-z2cBaw" alt="phone icon">
-                                <div id="number">(386) 316-3286</div>
-                            </div>
-                        </a>
-                        <a href="mailto:created.by.kaylad@gmail.com">
-                            <div class="contactIcons" id="emailSection">
-                                <img id="email" src="https://drive.google.com/uc?id=16iPuiYZCXhsVbJO1KiDRxAk9a3GaqEZv" alt="email icon">
-                                <div id="emailAddress">Created.By.KaylaD@gmail.com</div>
-                            </div>
-                        </a>
+                        <table>
+                            <tr id="name"><td>Kayla DeMarco</td></tr>
+                            <tr>
+                                <td id="title">
+                                    Graphic Designer | Created.By.KaylaD
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table>
+                                        <tr class="contactIcons" id="phoneSection">
+                                            <td>
+                                                <a href="tel:3863163286">
+                                                    <img id="phone" src="https://drive.google.com/uc?id=1tG-xp2CiOq_ggrKGrX2SZmB52-z2cBaw" alt="phone icon">
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="tel:3863163286">
+                                                    <div id="number">(386) 316-3286</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table>
+                                        <tr class="contactIcons" id="emailSection">
+                                            <td>
+                                                <a href="mailto:created.by.kaylad@gmail.com">
+                                                    <img id="email" src="https://drive.google.com/uc?id=16iPuiYZCXhsVbJO1KiDRxAk9a3GaqEZv" alt="email icon">
+                                                </a>
+                                                </td>
+                                            <td>
+                                                <a href="mailto:created.by.kaylad@gmail.com">
+                                                    <div id="emailAddress">Created.By.KaylaD@gmail.com</div>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
                     </td>
                 </tr>
-                <tr id="socialsSection">
+                <tr>
                     <td colspan="2">
-                        <div id="socialIconContainer">
-                            <a href="https://dev-kayla-demarco.pantheonsite.io/" target="_blank" rel="noreferrer" rel="noopener">
-                                <img id="web" class="socialIcons" src="https://drive.google.com/uc?id=1i8Uo0y6UE7g7EKTxqYczMVwBP-HTAwE3" alt="web logo">
-                            </a>
-                            <a href="https://www.instagram.com/created.by.kaylad/" target="_blank" rel="noreferrer" rel="noopener">
-                                <img id="instagram" class="socialIcons" src="https://drive.google.com/uc?id=1Zh8Wj-vwlh9E0VIIEvaym7hYSOzeXs9h" alt="instagram icon">
-                            </a>
-                            <a href="https://www.pinterest.com/createdbykaylad/" target="_blank" rel="noreferrer" rel="noopener">
-                                <img id="pinterest" class="socialIcons" src="https://drive.google.com/uc?id=19y92LA7Df4leF1z5I3zaj67705RrDCYv" alt="pinterest icon">
-                            </a>
-                            <a href="https://www.facebook.com/Created.By.KaylaD/" target="_blank" rel="noreferrer" rel="noopener">
-                                <img id="facebook" class="socialIcons" src="https://drive.google.com/uc?id=1Lk85O58nRyhGtdLvOMs8TwBJV8e9zUmd" alt="facebook icon">
-                            </a>
-                            <a href="https://www.linkedin.com/in/createdbykaylad/" target="_blank" rel="noreferrer" rel="noopener">
-                                <img id="linkedIn" class="socialIcons" src="https://drive.google.com/uc?id=1y__aVyaWz-MPnZ6RWhG3YgUobYpTDi_d" alt="linkedIn icon">
-                            </a>
-                        </div>
+                        <table  id="socialsSection">
+                            <td>
+                                <a href="https://dev-kayla-demarco.pantheonsite.io/" target="_blank" rel="noreferrer" rel="noopener">
+                                    <img id="web" class="socialIcons" src="https://drive.google.com/uc?id=1i8Uo0y6UE7g7EKTxqYczMVwBP-HTAwE3" alt="web logo">
+                                </a>
+                            </td>
+                            <td>
+                                <a href="https://www.instagram.com/created.by.kaylad/" target="_blank" rel="noreferrer" rel="noopener">
+                                    <img id="instagram" class="socialIcons" src="https://drive.google.com/uc?id=1Zh8Wj-vwlh9E0VIIEvaym7hYSOzeXs9h" alt="instagram icon">
+                                </a>
+                            </td>
+                            <td>
+                                <a href="https://www.pinterest.com/createdbykaylad/" target="_blank" rel="noreferrer" rel="noopener">
+                                    <img id="pinterest" class="socialIcons" src="https://drive.google.com/uc?id=19y92LA7Df4leF1z5I3zaj67705RrDCYv" alt="pinterest icon">
+                                </a>
+                            </td>
+                            <td>
+                                <a href="https://www.facebook.com/Created.By.KaylaD/" target="_blank" rel="noreferrer" rel="noopener">
+                                    <img id="facebook" class="socialIcons" src="https://drive.google.com/uc?id=1Lk85O58nRyhGtdLvOMs8TwBJV8e9zUmd" alt="facebook icon">
+                                </a>
+                            </td>
+                            <td>
+                                <a href="https://www.linkedin.com/in/createdbykaylad/" target="_blank" rel="noreferrer" rel="noopener">
+                                    <img id="linkedIn" class="socialIcons" src="https://drive.google.com/uc?id=1y__aVyaWz-MPnZ6RWhG3YgUobYpTDi_d" alt="linkedIn icon">
+                                </a>
+                            </td>
+                        </table>
                     </td>
                 </tr>
-            </table>
+            </tbody>
+        </table>
     </body>
 </html>
