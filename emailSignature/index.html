@@ -20,42 +20,11 @@
             #mainContainer{
                 width: 400px;
                 height: 220px;
-                background: white;
+                background: linear-gradient(white, white) padding-box,
+                    linear-gradient(to right, #ff0bac, #02f2f7) border-box;
                 margin: 20px;
-                position: relative;
+                border: 3px solid transparent;
                 border-radius: 20px;
-            }
-
-            #mainContainer:before{
-                content:'';
-                position: absolute;
-                top: -3px;
-                left: -3px;
-                bottom: -3px;
-                right: -3px;
-                background: white;
-                z-index: -1;
-                border-radius: 25px;
-                transform: skew(-1deg,-1deg);
-            }
-
-            #mainContainer:after{
-                content:'';
-                position: absolute;
-                top: -2px;
-                left: -2px;
-                bottom: -2px;
-                right: -2px;
-                background: white;
-                z-index: -2;
-                filter: blur(40px);
-                border-radius: inherit;
-                transform: skew(-1deg,-1deg);
-            }
-
-            #mainContainer:before,
-            #mainContainer:after{
-                background:linear-gradient(235deg,#ff0bac,white,#02f2f7);
             }
 
             #mainSection{
@@ -90,6 +59,7 @@
             #name{
                 font-family: "sherborne-variable", sans-serif; 
                 font-weight: 850;
+                font-kerning: none;
                 font-size: 24px;
             }
 
@@ -98,6 +68,7 @@
             #emailAddress{
                 font-family: "sherborne-variable", sans-serif; 
                 font-weight: 550;
+                font-kerning: none;
                 font-size: 14px;
             }
 
