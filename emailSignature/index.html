@@ -12,6 +12,11 @@
                 box-sizing: border-box;
             }
 
+            table{
+                width: 400px;
+                height: 220px;
+            }
+
             #mainContainer{
                 width: 400px;
                 height: 220px;
@@ -19,6 +24,9 @@
                 margin: 20px;
                 position: relative;
                 border-radius: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
 
             #mainContainer:before{
@@ -61,8 +69,6 @@
             }
 
             #logo{
-                margin-right: -13px;
-                margin-left: -20px;
                 width: 150px;
             }
 
@@ -85,7 +91,6 @@
             #name{
                 font-family: "sherborne-variable", sans-serif; 
                 font-weight: 850;
-                font-optical-sizing: 72;
                 font-size: 24px;
             }
 
@@ -94,7 +99,6 @@
             #emailAddress{
                 font-family: "sherborne-variable", sans-serif; 
                 font-weight: 550;
-                font-optical-sizing: 60;
                 font-size: 14px;
             }
 
@@ -125,52 +129,52 @@
     </head>
     <body>
         <div id="mainContainer">
-            <div id="subContainer">
-                <div id="mainSection">
-                    <div>
-                        <img id="logo" src="https://drive.google.com/uc?id=17tGIy5UGG1VldEwCicWDWr0gbQ3wbnG4" alt="Created By Kayla D Logo">
-                    </div>
-                    <div id="infoSection">
+            <table id="subContainer">
+                <tr id="mainSection">
+                    <td>
+                        <img id="logo" src="assets/images/Logo_Vector_FINAL_LogoIcon.png" alt="Created By Kayla D Logo">
+                    </td>
+                    <td id="infoSection">
                         <div id="name">Kayla DeMarco</div>
                         <div id="title">
                             Graphic Designer | Created.By.KaylaD
                         </div>
                         <a href="tel:3863163286">
                             <div class="contactIcons" id="phoneSection">
-                                <img id="phone" src="https://drive.google.com/uc?id=1tG-xp2CiOq_ggrKGrX2SZmB52-z2cBaw" alt="phone icon">
+                                <img id="phone" src="assets/images/SocialMediaIcons_Phone.png" alt="phone icon">
                                 <div id="number">(386) 316-3286</div>
                             </div>
                         </a>
                         <a href="mailto:created.by.kaylad@gmail.com">
                             <div class="contactIcons" id="emailSection">
-                                <img id="email" src="https://drive.google.com/uc?id=16iPuiYZCXhsVbJO1KiDRxAk9a3GaqEZv" alt="email icon">
+                                <img id="email" src="assets/images/SocialMediaIcons_Email_2.png" alt="email icon">
                                 <div id="emailAddress">Created.By.KaylaD@gmail.com</div>
                             </div>
                         </a>
-                    </div>
-                </div>
-                <div id="socialsSection">
-                    <div>
+                    </td>
+                </tr>
+                <tr id="socialsSection">
+                    <td>
                         <div id="socialIconContainer">
                             <a href="https://dev-kayla-demarco.pantheonsite.io/" target="_blank" rel="noreferrer" rel="noopener">
-                                <img id="web" class="socialIcons" src="https://drive.google.com/uc?id=1i8Uo0y6UE7g7EKTxqYczMVwBP-HTAwE3" alt="web logo">
+                                <img id="web" class="socialIcons" src="assets/images/SocialMediaIcons_Web.png" alt="web logo">
                             </a>
                             <a href="https://www.instagram.com/created.by.kaylad/" target="_blank" rel="noreferrer" rel="noopener">
-                                <img id="instagram" class="socialIcons" src="https://drive.google.com/uc?id=1Zh8Wj-vwlh9E0VIIEvaym7hYSOzeXs9h" alt="instagram icon">
+                                <img id="instagram" class="socialIcons" src="assets/images/SocialMediaIcons_Insta.png" alt="instagram icon">
                             </a>
                             <a href="https://www.pinterest.com/createdbykaylad/" target="_blank" rel="noreferrer" rel="noopener">
-                                <img id="pinterest" class="socialIcons" src="https://drive.google.com/uc?id=19y92LA7Df4leF1z5I3zaj67705RrDCYv" alt="pinterest icon">
+                                <img id="pinterest" class="socialIcons" src="assets/images/SocialMediaIcons_Pinterest.png" alt="pinterest icon">
                             </a>
                             <a href="https://www.facebook.com/Created.By.KaylaD/" target="_blank" rel="noreferrer" rel="noopener">
-                                <img id="facebook" class="socialIcons" src="https://drive.google.com/uc?id=1Lk85O58nRyhGtdLvOMs8TwBJV8e9zUmd" alt="facebook icon">
+                                <img id="facebook" class="socialIcons" src="assets/images/SocialMediaIcons_Fb.png" alt="facebook icon">
                             </a>
                             <a href="https://www.linkedin.com/in/createdbykaylad/" target="_blank" rel="noreferrer" rel="noopener">
-                                <img id="linkedIn" class="socialIcons" src="https://drive.google.com/uc?id=1y__aVyaWz-MPnZ6RWhG3YgUobYpTDi_d" alt="linkedIn icon">
+                                <img id="linkedIn" class="socialIcons" src="assets/images/SocialMediaIcons_In.png" alt="linkedIn icon">
                             </a>
                         </div>
-                    </div>
-                </div>
-            </div>
+                    </td>
+                </tr>
+            </table>
         </div>
     </body>
 </html>
