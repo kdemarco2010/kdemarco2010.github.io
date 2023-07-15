@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Email Signature</title>
+        <style>
+            @import url("https://use.typekit.net/cne8jfz.css");
+
+            body {
+                box-sizing: border-box;
+            }
+
+            #mainContainer{
+                width: 400px;
+                height: 220px;
+                background: white;
+                margin: 20px;
+                position: relative;
+                border-radius: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            #mainContainer:before{
+                content:'';
+                position: absolute;
+                top: -3px;
+                left: -3px;
+                bottom: -3px;
+                right: -3px;
+                background: white;
+                z-index: -1;
+                border-radius: 25px;
+                transform: skew(-1deg,-1deg);
+            }
+
+            #mainContainer:after{
+                content:'';
+                position: absolute;
+                top: -2px;
+                left: -2px;
+                bottom: -2px;
+                right: -2px;
+                background: white;
+                z-index: -2;
+                filter: blur(40px);
+                border-radius: inherit;
+                transform: skew(-1deg,-1deg);
+            }
+
+            #mainContainer:before,
+            #mainContainer:after{
+                background:linear-gradient(235deg,#ff0bac,white,#02f2f7);
+            }
+
+            #mainSection{
+                display: flex;
+                align-items: center;
+                margin-bottom: -20px;
+                margin-top: -20px;
+            }
+
+            #logo{
+                margin-right: -13px;
+                margin-left: -20px;
+                width: 150px;
+            }
+
+            a{
+                text-decoration: none;
+                color: #050833;
+            }
+
+            #title{
+                border-bottom: 1px solid #050833;
+                padding-bottom: 7px;
+            }
+
+            .contactIcons{
+                display: flex;
+                align-items: center;
+                margin-left: -15px;
+            }
+
+            #name{
+                font-family: "sherborne-variable", sans-serif; 
+                font-variation-settings: "opsz" 72, "wght" 850;
+                font-size: 24px;
+            }
+
+            #title,
+            #number,
+            #emailAddress{
+                font-family: "sherborne-variable", sans-serif; 
+                font-variation-settings: "opsz" 60, "wght" 350;
+                font-size: 14px;
+            }
+
+            #infoSection{
+                border: 3px solid;
+                border-image: linear-gradient(to bottom, #02f2f7, #ff0bac) 0 0 0 1;
+                padding-left: 20px;
+            }
+
+            .contactIcons img{
+                width: 50px;
+            }
+
+            #emailSection{
+                margin-top: -10px;
+            }
+
+            #socialIconContainer{
+                display: flex;
+                justify-content: space-between;
+                padding: 0 30px;
+            }
+
+            .socialIcons{
+                width: 45px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="mainContainer">
+            <div id="subContainer">
+                <div id="mainSection">
+                    <div>
+                        <img id="logo" src="https://drive.google.com/uc?id=1e14s7lucLihnSDLjZEAHQ5tAke4o63KN" alt="Created By Kayla D Logo">
+                    </div>
+                    <div id="infoSection">
+                        <div id="name">Kayla DeMarco</div>
+                        <div id="title">
+                            Graphic Designer | Created.By.KaylaD
+                        </div>
+                        <a href="tel:3863163286">
+                            <div class="contactIcons" id="phoneSection">
+                                <img id="phone" src="https://drive.google.com/uc?id=1tG-xp2CiOq_ggrKGrX2SZmB52-z2cBaw" alt="phone icon">
+                                <div id="number">(386) 316-3286</div>
+                            </div>
+                        </a>
+                        <a href="mailto:created.by.kaylad@gmail.com">
+                            <div class="contactIcons" id="emailSection">
+                                <img id="email" src="https://drive.google.com/uc?id=16iPuiYZCXhsVbJO1KiDRxAk9a3GaqEZv" alt="email icon">
+                                <div id="emailAddress">Created.By.KaylaD@gmail.com</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div id="socialsSection">
+                    <div>
+                        <div id="socialIconContainer">
+                            <a href="https://dev-kayla-demarco.pantheonsite.io/" target="_blank" rel="noreferrer" rel="noopener">
+                                <img id="web" class="socialIcons" src="https://drive.google.com/uc?id=1i8Uo0y6UE7g7EKTxqYczMVwBP-HTAwE3" alt="web logo">
+                            </a>
+                            <a href="https://www.instagram.com/created.by.kaylad/" target="_blank" rel="noreferrer" rel="noopener">
+                                <img id="instagram" class="socialIcons" src="https://drive.google.com/uc?id=1Zh8Wj-vwlh9E0VIIEvaym7hYSOzeXs9h" alt="instagram icon">
+                            </a>
+                            <a href="https://www.pinterest.com/createdbykaylad/" target="_blank" rel="noreferrer" rel="noopener">
+                                <img id="pinterest" class="socialIcons" src="https://drive.google.com/uc?id=19y92LA7Df4leF1z5I3zaj67705RrDCYv" alt="pinterest icon">
+                            </a>
+                            <a href="https://www.facebook.com/Created.By.KaylaD/" target="_blank" rel="noreferrer" rel="noopener">
+                                <img id="facebook" class="socialIcons" src="https://drive.google.com/uc?id=1Lk85O58nRyhGtdLvOMs8TwBJV8e9zUmd" alt="facebook icon">
+                            </a>
+                            <a href="https://www.linkedin.com/in/createdbykaylad/" target="_blank" rel="noreferrer" rel="noopener">
+                                <img id="linkedIn" class="socialIcons" src="https://drive.google.com/uc?id=1y__aVyaWz-MPnZ6RWhG3YgUobYpTDi_d" alt="linkedIn icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
