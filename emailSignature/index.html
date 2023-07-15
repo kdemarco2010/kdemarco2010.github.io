@@ -20,7 +20,8 @@
             #mainContainer{
                 width: 400px;
                 height: 220px;
-                background: linear-gradient(white, white) padding-box,
+                background: 
+                    linear-gradient(white, white) padding-box,
                     linear-gradient(to right, #ff0bac, #02f2f7) border-box;
                 margin: 20px;
                 border: 3px solid transparent;
@@ -28,15 +29,18 @@
             }
 
             #mainSection{
-                display: flex;
-                align-items: center;
                 margin-bottom: -20px;
                 margin-top: -20px;
             }
 
+            #logoSection{
+                width: 30%;
+
+            }
+
             #logo{
-                margin-right: -10px;
-                margin-left: -5px;
+                display: block;
+                margin: -50px -15px -50px -5px;
                 width: 150px;
             }
 
@@ -46,13 +50,12 @@
             }
 
             #title{
-                border-bottom: 1px solid #050833;
+                border-bottom: 1px solid;
+                border-image: linear-gradient(to right, #ff0bac, #02f2f7) 0 0 1 0;
                 padding-bottom: 7px;
             }
 
             .contactIcons{
-                display: flex;
-                align-items: center;
                 margin-left: -15px;
             }
 
@@ -70,6 +73,7 @@
                 font-weight: 550;
                 font-kerning: none;
                 font-size: 14px;
+                line-height: 25px;
             }
 
             #infoSection{
@@ -82,18 +86,27 @@
                 width: 50px;
             }
 
+            #phone,
+            #number,
+            #email,
+            #emailAddress,
+            .socialIcons{
+                display: inline-block;
+                vertical-align: middle;
+            }
+
             #emailSection{
                 margin-top: -10px;
             }
 
             #socialIconContainer{
-                display: flex;
-                justify-content: space-between;
-                padding: 0 30px;
+                display: block;
+                text-align: center;
             }
 
             .socialIcons{
                 width: 45px;
+                padding: 0 5px;
             }
         </style>
     </head>
@@ -101,7 +114,7 @@
         <div id="mainContainer">
             <table id="subContainer">
                 <tr id="mainSection">
-                    <td>
+                    <td id="logoSection">
                         <img id="logo" src="https://drive.google.com/uc?id=17tGIy5UGG1VldEwCicWDWr0gbQ3wbnG4" alt="Created By Kayla D Logo">
                     </td>
                     <td id="infoSection">
@@ -124,7 +137,7 @@
                     </td>
                 </tr>
                 <tr id="socialsSection">
-                    <td>
+                    <td colspan="2">
                         <div id="socialIconContainer">
                             <a href="https://dev-kayla-demarco.pantheonsite.io/" target="_blank" rel="noreferrer" rel="noopener">
                                 <img id="web" class="socialIcons" src="https://drive.google.com/uc?id=1i8Uo0y6UE7g7EKTxqYczMVwBP-HTAwE3" alt="web logo">
