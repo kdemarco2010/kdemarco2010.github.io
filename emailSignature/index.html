@@ -5,84 +5,32 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <title>Email Signature</title>
-        <style>
-            @import url("https://use.typekit.net/cne8jfz.css");
-
-            body {
-                box-sizing: border-box;
-            }
-
-            #table{
-                border: 3px solid;
-                border-image: linear-gradient(to right, #ff0bac, #02f2f7) 1;
-            }
-            
-            #logo{
-                margin: -50px -15px -50px -10px;
-                width: 150px;
-            }
-
-            a{
-                text-decoration: none;
-                color: #050833;
-            }
-
-            #title{
-                border-bottom: 1px solid;
-                border-image: linear-gradient(to right, #ff0bac, #02f2f7) 0 0 1 0;
-                padding-bottom: 5px;
-            }
-
-            #name{
-                font-family: "sherborne-variable", sans-serif; 
-                font-weight: 850;
-                font-kerning: none;
-                font-size: 24px;
-            }
-
-            #title,
-            #number,
-            #emailAddress{
-                font-family: "sherborne-variable", sans-serif; 
-                font-weight: 550;
-                font-kerning: none;
-                font-size: 14px;
-                line-height: 25px;
-            }
-
-            #infoSection{
-                border: 3px solid;
-                border-image: linear-gradient(to bottom, #02f2f7, #ff0bac) 0 0 0 1;
-                padding-left: 20px;
-            }
-
-            .contactIcons img{
-                width: 50px;
-                margin: -20px 0 -20px -20px;
-            }
-
-            #socialsSection{
-                margin: auto;
-            }
-
-            .socialIcons{
-                width: 45px;
-                padding: 0 5px;
-            }
-        </style>
     </head>
     <body>
-        <table id="table">
+        <table id="table" style="border: 3px solid;
+        border-image: linear-gradient(to right, #ff0bac, #02f2f7) 1;">
             <tbody>
                 <tr id="mainSection">
                     <td id="logoSection">
-                        <img id="logo" src="https://drive.google.com/uc?id=17tGIy5UGG1VldEwCicWDWr0gbQ3wbnG4" alt="Created By Kayla D Logo">
+                        <img id="logo" src="https://drive.google.com/uc?id=17tGIy5UGG1VldEwCicWDWr0gbQ3wbnG4" alt="Created By Kayla D Logo" style="margin: -50px -15px -50px -10px;
+                        width: 150px;">
                     </td>
-                    <td id="infoSection">
+                    <td id="infoSection" style="border: 3px solid;
+                    border-image: linear-gradient(to bottom, #02f2f7, #ff0bac) 0 0 0 1;
+                    padding-left: 20px;">
                         <table>
-                            <tr id="name"><td>Kayla DeMarco</td></tr>
+                            <tr id="name" style="font-family: Palatino, sans-serif; 
+                            font-weight: 850;
+                            font-kerning: none;
+                            font-size: 24px;"><td>Kayla DeMarco</td></tr>
                             <tr>
-                                <td id="title">
+                                <td id="title" style="border-bottom: 1px solid;
+                                border-image: linear-gradient(to right, #ff0bac, #02f2f7) 0 0 1 0;
+                                padding-bottom: 5px; font-family: Palatino, sans-serif; 
+                                font-weight: 350;
+                                font-kerning: none;
+                                font-size: 14px;
+                                line-height: 25px;">
                                     Graphic Designer | Created.By.KaylaD
                                 </td>
                             </tr>
@@ -91,13 +39,21 @@
                                     <table>
                                         <tr class="contactIcons" id="phoneSection">
                                             <td>
-                                                <a href="tel:3863163286">
-                                                    <img id="phone" src="https://drive.google.com/uc?id=1tG-xp2CiOq_ggrKGrX2SZmB52-z2cBaw" alt="phone icon">
+                                                <a href="tel:3863163286" style="text-decoration: none;
+                                                color: #050833;">
+                                                    <img id="phone" src="https://drive.google.com/uc?id=1tG-xp2CiOq_ggrKGrX2SZmB52-z2cBaw" alt="phone icon"
+                                                    style="width: 50px;
+                                                    margin: -20px 0 -20px -20px;">
                                                 </a>
                                             </td>
                                             <td>
-                                                <a href="tel:3863163286">
-                                                    <div id="number">(386) 316-3286</div>
+                                                <a href="tel:3863163286" style="text-decoration: none;
+                                                color: #050833;">
+                                                    <div id="number" style="font-family: Palatino, sans-serif; 
+                                                    font-weight: 200;
+                                                    font-kerning: none;
+                                                    font-size: 14px;
+                                                    line-height: 25px;">(386) 316-3286</div>
                                                 </a>
                                             </td>
                                         </tr>
@@ -109,13 +65,21 @@
                                     <table>
                                         <tr class="contactIcons" id="emailSection">
                                             <td>
-                                                <a href="mailto:created.by.kaylad@gmail.com">
-                                                    <img id="email" src="https://drive.google.com/uc?id=16iPuiYZCXhsVbJO1KiDRxAk9a3GaqEZv" alt="email icon">
+                                                <a href="mailto:created.by.kaylad@gmail.com" style="text-decoration: none;
+                                                color: #050833;">
+                                                    <img id="email" src="https://drive.google.com/uc?id=16iPuiYZCXhsVbJO1KiDRxAk9a3GaqEZv" alt="email icon"
+                                                    style="width: 50px;
+                                                    margin: -20px 0 -20px -20px;">
                                                 </a>
                                                 </td>
                                             <td>
-                                                <a href="mailto:created.by.kaylad@gmail.com">
-                                                    <div id="emailAddress">Created.By.KaylaD@gmail.com</div>
+                                                <a href="mailto:created.by.kaylad@gmail.com" style="text-decoration: none;
+                                                color: #050833;">
+                                                    <div id="emailAddress" style="font-family: Palatino, sans-serif; 
+                                                    font-weight: 200;
+                                                    font-kerning: none;
+                                                    font-size: 14px;
+                                                    line-height: 25px;">Created.By.KaylaD@gmail.com</div>
                                                 </a>
                                             </td>
                                         </tr>
@@ -127,30 +91,40 @@
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <table  id="socialsSection">
+                        <table  id="socialsSection" style="margin: auto;">
                             <td>
                                 <a href="https://dev-kayla-demarco.pantheonsite.io/" target="_blank" rel="noreferrer" rel="noopener">
-                                    <img id="web" class="socialIcons" src="https://drive.google.com/uc?id=1i8Uo0y6UE7g7EKTxqYczMVwBP-HTAwE3" alt="web logo">
+                                    <img id="web" class="socialIcons" src="https://drive.google.com/uc?id=1i8Uo0y6UE7g7EKTxqYczMVwBP-HTAwE3" alt="web logo"
+                                    style="width: 45px;
+                                    padding: 0 5px;">
                                 </a>
                             </td>
                             <td>
                                 <a href="https://www.instagram.com/created.by.kaylad/" target="_blank" rel="noreferrer" rel="noopener">
-                                    <img id="instagram" class="socialIcons" src="https://drive.google.com/uc?id=1Zh8Wj-vwlh9E0VIIEvaym7hYSOzeXs9h" alt="instagram icon">
+                                    <img id="instagram" class="socialIcons" src="https://drive.google.com/uc?id=1Zh8Wj-vwlh9E0VIIEvaym7hYSOzeXs9h" alt="instagram icon"
+                                    style="width: 45px;
+                                    padding: 0 5px;">
                                 </a>
                             </td>
                             <td>
                                 <a href="https://www.pinterest.com/createdbykaylad/" target="_blank" rel="noreferrer" rel="noopener">
-                                    <img id="pinterest" class="socialIcons" src="https://drive.google.com/uc?id=19y92LA7Df4leF1z5I3zaj67705RrDCYv" alt="pinterest icon">
+                                    <img id="pinterest" class="socialIcons" src="https://drive.google.com/uc?id=19y92LA7Df4leF1z5I3zaj67705RrDCYv" alt="pinterest icon"
+                                    style="width: 45px;
+                                    padding: 0 5px;">
                                 </a>
                             </td>
                             <td>
                                 <a href="https://www.facebook.com/Created.By.KaylaD/" target="_blank" rel="noreferrer" rel="noopener">
-                                    <img id="facebook" class="socialIcons" src="https://drive.google.com/uc?id=1Lk85O58nRyhGtdLvOMs8TwBJV8e9zUmd" alt="facebook icon">
+                                    <img id="facebook" class="socialIcons" src="https://drive.google.com/uc?id=1Lk85O58nRyhGtdLvOMs8TwBJV8e9zUmd" alt="facebook icon"
+                                    style="width: 45px;
+                                    padding: 0 5px;">
                                 </a>
                             </td>
                             <td>
                                 <a href="https://www.linkedin.com/in/createdbykaylad/" target="_blank" rel="noreferrer" rel="noopener">
-                                    <img id="linkedIn" class="socialIcons" src="https://drive.google.com/uc?id=1y__aVyaWz-MPnZ6RWhG3YgUobYpTDi_d" alt="linkedIn icon">
+                                    <img id="linkedIn" class="socialIcons" src="https://drive.google.com/uc?id=1y__aVyaWz-MPnZ6RWhG3YgUobYpTDi_d" alt="linkedIn icon"
+                                    style="width: 45px;
+                                    padding: 0 5px;">
                                 </a>
                             </td>
                         </table>
